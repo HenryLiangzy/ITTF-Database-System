@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<!-- jsn_nuru_pro 2.1.0 -->
+<html lang="" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Player profile</title>
+	<link href="/templates/jsn_nuru_pro/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/../media/coalaweb/plugins/system/gears/fonts/style.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/calendar-jos.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" title="Green" media="all" type="text/css" />
+	<link href="http://results.ittf.link/media/com_fabrik/css/fabrik.css" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/list/tmpl/bootstrap/template_css.php?c=99_com_fabrik_99&amp;buttoncount=1&amp;format=html" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/list/tmpl/bootstrap/custom_css.php?c=99_com_fabrik_99&amp;buttoncount=1&amp;format=html" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-responsive.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-extended.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-responsive-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/general.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template_pro.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/colors/green.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/styles/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_wide.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_mobile.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/modules/sociallinks/css/cw-default.css" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/components/sociallinks/themes-icon/cws-circle-fadein/cwsl_style.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	div.jsn-modulecontainer ul.menu-mainmenu ul,
+	div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-left: 199px;
+	}
+	#jsn-pos-toolbar div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-right: 199px;
+		margin-left : auto
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul,
+	div.jsn-modulecontainer ul.menu-sidemenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		right: -200px;
+	}
+	body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		left: -200px;
+		right: auto;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+		margin-left: 199px;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"3a0262d7696f594e79e137c16682fc32","system.paths":{"root":"","base":""},"joomla.jtext":{"COM_FABRIK_LOADING":"Loading...","COM_FABRIK_PREV":"Prev","COM_FABRIK_SELECT_ROWS_FOR_DELETION":"Select some rows for deletion","JYES":"Yes","JNO":"No","COM_FABRIK_SELECT_COLUMNS_TO_EXPORT":"Select columns to export","COM_FABRIK_INCLUDE_FILTERS":"Include filters:","COM_FABRIK_INCLUDE_DATA":"Include data:","COM_FABRIK_INCLUDE_RAW_DATA":"Include raw data:","COM_FABRIK_INCLUDE_CALCULATIONS":"Include calculations","COM_FABRIK_EXPORT":"Export","COM_FABRIK_START":"Start","COM_FABRIK_NEXT":"Next","COM_FABRIK_END":"End","COM_FABRIK_PAGE":"COM_FABRIK_PAGE","COM_FABRIK_OF":"COM_FABRIK_OF","COM_FABRIK_RECORDS":"records","COM_FABRIK_SAVING_TO":"saving to","COM_FABRIK_CONFIRM_DROP":"Do you really want to delete all records and reset this tables key to 0?","COM_FABRIK_CONFIRM_DELETE_1":"Are you sure you want to delete this record?","COM_FABRIK_NO_RECORDS":"No records found","COM_FABRIK_CSV_COMPLETE":"CSV export complete","COM_FABRIK_CSV_DOWNLOAD_HERE":"Download here","COM_FABRIK_CONFIRM_DELETE":"Are you sure you want to delete %s records?","COM_FABRIK_CSV_DOWNLOADING":"CSV file downloading","COM_FABRIK_FILE_TYPE":"File type","COM_FABRIK_ADVANCED_SEARCH":"Advanced search","COM_FABRIK_FORM_FIELDS":"Form fields","COM_FABRIK_VIEW":"View","COM_FABRIK_LIST_SHORTCUTS_ADD":"a","COM_FABRIK_LIST_SHORTCUTS_EDIT":"e","COM_FABRIK_LIST_SHORTCUTS_DELETE":"d","COM_FABRIK_LIST_SHORTCUTS_FILTER":"f"}}</script>
+	<script src="/media/system/js/mootools-core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar-setup.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js" type="text/javascript"></script>
+	<script src="/templates/jsn_nuru_pro/js/jsn_template.js" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="//platform.twitter.com/widgets.js" type="text/javascript" async="async"></script>
+	<script type="text/javascript">
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]; Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]; Calendar._FD = 0; Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; Calendar._TT = {"INFO":"About the Calendar","ABOUT":"DHTML Date\/Time Selector\n(c) dynarch.com 2002-2005 \/ Author: Mihai Bazon\nFor latest version visit: http:\/\/www.dynarch.com\/projects\/calendar\/\nDistributed under GNU LGPL.  See http:\/\/gnu.org\/licenses\/lgpl.html for details.\n\nDate selection:\n- Use the \u00ab and \u00bb buttons to select year\n- Use the < and > buttons to select month\n- Hold mouse button on any of the buttons above for faster selection.","ABOUT_TIME":"\n\nTime selection:\n- Click on any of the time parts to increase it\n- or Shift-click to decrease it\n- or click and drag for faster selection.","PREV_YEAR":"Select to move to the previous year. Select and hold for a list of years.","PREV_MONTH":"Select to move to the previous month. Select and hold for a list of the months.","GO_TODAY":"Go to today","NEXT_MONTH":"Select to move to the next month. Select and hold for a list of the months.","SEL_DATE":"Select a date.","DRAG_TO_MOVE":"Drag to move.","PART_TODAY":" Today ","DAY_FIRST":"Display %s first","WEEKEND":"0,6","CLOSE":"Close","TODAY":"Today","TIME_PART":"(Shift-)Select or Drag to change the value.","DEF_DATE_FORMAT":"%Y-%m-%d","TT_DATE_FORMAT":"%a, %b %e","WK":"wk","TIME":"Time:"};
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_nuru_pro_",
+					templatePath			: "/templates/jsn_nuru_pro",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 1,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: ["mobile","wide"],
+					mobileMenuEffect		: "push-left"
+				});
+			
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+	</script>
+	<link rel="canonical" href="/index.php?option=com_fabrik&amp;amp;view=list&amp;amp;listid=99&amp;amp;Itemid=266" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+	<!-- html5.js and respond.min.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="/plugins/system/jsntplframework/assets/3rd-party/respond/respond.min.js"></script>
+	<![endif]-->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31478852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body id="jsn-master" class="jsn-textstyle-custom jsn-color-green jsn-direction-ltr jsn-responsive jsn-mobile jsn-joomla-30  jsn-com-fabrik jsn-view-list jsn-itemid-266">
+<a name="top" id="top"></a>
+<div id="jsn-page" class="container">
+	<div id="jsn-header">
+		<div id="jsn-logo" class="pull-left">
+			<a href="/index.php" title=""><img src="/images/ittf_logo.png" alt="" id="jsn-logo-desktop" /></a>		</div>
+		<div id="jsn-headerright" class="pull-right">
+							<div id="jsn-pos-top">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><div class="cw-sl-width-100" id="cw-sl-103">
+            <div class="cw-social-mod">
+                                <div class="cw-social-mod-bookmark">
+                    
+                                            <h3 style="color:#444444" class="cw-social-mod-title-ac">
+                            Share it!                        </h3>
+                                            
+                                            
+                    <div class="cw-social-mod-icon-ac">
+
+                        <ul class="cw-social-mod-icons-cws-circle-fadein">
+                            <li>
+<a class="facebook32" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fresults.ittf.link" title="Share on Facebook"  target="_blank"></a>
+</li><li>
+<a class="googleplus-alt32" href="https://plus.google.com/share?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Google"  target="_blank"></a>
+</li><li>
+<a class="stumbleupon32"  href="https://www.stumbleupon.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Stumbleupon"  target="_blank"></a>
+</li><li>
+<a class="twitter32" href="https://twitter.com/intent/tweet?text=ITTF%20Results%2C%20Ranking%20%26%20Statistics&amp;url=https%3A%2F%2Fresults.ittf.link" title="Share on Twitter"  target="_blank"></a>
+</li><li>
+<a class="linkedin32" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on LinkedIn"  target="_blank"></a>
+</li><li>
+<a class="reddit32" href="https://reddit.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Reddit"  target="_blank"></a>
+</li><li>
+<a class="newsvine32" href="https://www.newsvine.com/_tools/seed?popoff=0&amp;u=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Newsvine"  target="_blank"></a>
+</li><li>
+<a class="gmail32" href="mailto:?subject=I&nbsp;thought&nbsp;you&nbsp;might&nbsp;like&nbsp;this!&amp;body=Website:&nbsp;ITTF&nbsp;Results&nbsp;Ranking&nbsp;and&nbsp;Statistics%0D%0ATitle:&nbsp;ITTF%20Results%2C%20Ranking%20%26%20Statistics%0D%0ALink:&nbsp;https%3A%2F%2Fresults.ittf.link" title="Recommend this page" ></a>
+</li>                        </ul>
+                    </div>
+                </div>
+            </div>
+                        </div>
+<div class="clearbreak"></div></div></div></div>
+					<div class="clearbreak"></div>
+				</div>
+						</div>
+		<div class="clearbreak"></div>
+					<div id="jsn-menu"><div id="jsn-menu-inner">
+											<div id="jsn-pos-mainmenu" >
+							<div class="_menu jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle">Menu</span>
+<ul class="menu-mainmenu">
+<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li> 
+<li  class="first"><a  href="/index.php?option=com_content&amp;view=featured&amp;Itemid=101" >
+	<i class=" "></i>
+	<span>
+		Home	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=37&amp;Itemid=154" >
+	<i class=" "></i>
+	<span>
+		Associations	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Teams		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=95&amp;Itemid=258" >
+	<i class=" "></i>
+	<span>
+		Teams results	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=107&amp;Itemid=281" >
+	<i class=" "></i>
+	<span>
+		Teams matches	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=108&amp;Itemid=282" >
+	<i class=" "></i>
+	<span>
+		Team vs Team	</span>
+</a></li></ul></li><li  class="active parent">	<a  href="/" >
+		<span>
+		Players		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=35&amp;Itemid=155" >
+	<i class=" "></i>
+	<span>
+		Players data	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=84&amp;Itemid=228" >
+	<i class=" "></i>
+	<span>
+		Players stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=36&amp;Itemid=158" >
+	<i class=" "></i>
+	<span>
+		Players matches	</span>
+</a></li><li  class="current active"><a class="current" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266" >
+	<i class=" "></i>
+	<span>
+		Players profiles	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=87&amp;Itemid=240" >
+	<i class=" "></i>
+	<span>
+		Head to Head	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=45&amp;Itemid=179" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=83&amp;Itemid=225" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Tournaments		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111" >
+	<i class=" "></i>
+	<span>
+		Tournaments list	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Tours		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=112" >
+	<i class=" "></i>
+	<span>
+		World Tour data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=4&amp;Itemid=128" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=5&amp;Itemid=129" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=6&amp;Itemid=145" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=31&amp;Itemid=146" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=7&amp;Itemid=147" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=32&amp;Itemid=148" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in U21 Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=8&amp;Itemid=151" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=33&amp;Itemid=152" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Doubles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=20&amp;Itemid=149" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=34&amp;Itemid=150" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=11&amp;Itemid=135" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=9&amp;Itemid=133" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=10&amp;Itemid=134" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=42&amp;Itemid=167" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=68&amp;Itemid=204" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		TOP 100		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=63&amp;Itemid=200" >
+	<i class=" "></i>
+	<span>
+		Singles - All Years	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=64&amp;Itemid=201" >
+	<i class=" "></i>
+	<span>
+		Singles - Per Year	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=65&amp;Itemid=202" >
+	<i class=" "></i>
+	<span>
+		U21 - All Years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=66&amp;Itemid=203" >
+	<i class=" "></i>
+	<span>
+		U21 - Per Year	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=48&amp;Itemid=183" >
+	<i class=" "></i>
+	<span>
+		World Juniors data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=50&amp;Itemid=185" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=51&amp;Itemid=186" >
+	<i class=" "></i>
+	<span>
+		Participation per tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=52&amp;Itemid=188" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=53&amp;Itemid=189" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=54&amp;Itemid=191" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=55&amp;Itemid=192" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Cadets		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=56&amp;Itemid=194" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=57&amp;Itemid=195" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=58&amp;Itemid=196" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=59&amp;Itemid=197" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=60&amp;Itemid=198" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Olympic Games		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=93&amp;Itemid=255" >
+	<i class=" "></i>
+	<span>
+		Players participation - Olympic Games	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=92&amp;Itemid=253" >
+	<i class=" "></i>
+	<span>
+		Medalists - Olympic Games	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=96&amp;Itemid=261" >
+	<i class=" "></i>
+	<span>
+		Teams results - Olympics	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Championships		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=111&amp;Itemid=286" >
+	<i class=" "></i>
+	<span>
+		Players participation - WTTC	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=112&amp;Itemid=287" >
+	<i class=" "></i>
+	<span>
+		Players participation - Stats WTTC	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=97&amp;Itemid=263" >
+	<i class=" "></i>
+	<span>
+		Teams results - WTTC	</span>
+</a></li></ul></li><li  class="parent last">	<a  href="#" >
+		<span>
+		World Cups		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=98&amp;Itemid=265" >
+	<i class=" "></i>
+	<span>
+		Teams results - World Cups	</span>
+</a></li></ul></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		Rankings	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="parent first"><a href="javascript: void(0)">
+	<span>
+		General Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=69&amp;Itemid=206" >
+	<i class=" "></i>
+	<span>
+		Current WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=70&amp;Itemid=207" >
+	<i class=" "></i>
+	<span>
+		Current WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=43&amp;Itemid=208" >
+	<i class=" "></i>
+	<span>
+		General WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U21 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=72&amp;Itemid=211" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=73&amp;Itemid=212" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=71&amp;Itemid=210" >
+	<i class=" "></i>
+	<span>
+		U21 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U18 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=75&amp;Itemid=214" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=76&amp;Itemid=215" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=74&amp;Itemid=216" >
+	<i class=" "></i>
+	<span>
+		U18 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U15 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=78&amp;Itemid=218" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=79&amp;Itemid=219" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=77&amp;Itemid=220" >
+	<i class=" "></i>
+	<span>
+		U15 WR - Archive	</span>
+</a></li></ul></li><li  class="parent last"><a href="javascript: void(0)">
+	<span>
+		Doubles WR	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=88&amp;Itemid=242" >
+	<i class=" "></i>
+	<span>
+		Doubles - Pairs WR	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=90&amp;Itemid=243" >
+	<i class=" "></i>
+	<span>
+		Doubles - Individual WR	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=81&amp;Itemid=224" >
+	<i class=" "></i>
+	<span>
+		Doubles Ranking (before 2018)	</span>
+</a></li></ul></li></ul></li><li  class="last"><a  href="/index.php?option=com_content&amp;view=article&amp;id=6&amp;Itemid=229" >
+	<i class=" "></i>
+	<span>
+		Help	</span>
+</a></li></ul><div class="clearbreak"></div></div></div></div>
+													</div>
+																	<span id="jsn-desktopswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','no'); return false;"></a>
+				</span>
+						<span id="jsn-mobileswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','yes'); return false;"></a>
+				</span>
+											<div class="clearbreak"></div>
+				</div></div>
+				</div>
+		<div id="jsn-body">
+		<div id="jsn-content" class="">
+			<div id="jsn-content_inner" class="row-fluid">
+										<div id="jsn-maincontent" class="span12 order1  row-fluid">
+																<div id="jsn-centercol" class="span12 order1 ">
+										<div id="jsn-centercol_inner">
+																						<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+																									<div id="jsn-mainbody">
+														<div id="system-message-container">
+	</div>
+
+														<div class="page-header">
+		<h1>Players profiles</h1>
+	</div>
+<p>Search by Player name and click on the magnifier button to see the Player's profile.</p><form class="fabrikForm form-search" action="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0" method="post" id="listform_99_com_fabrik_99" name="fabrikList">
+
+<div class="fabrikButtonsContainer row-fluid">
+<ul class="nav nav-pills  pull-left">
+
+</ul>
+<ul class="nav pull-right">
+	<li>
+	<div class="input-append">
+	
+<input
+	type="search"
+	size="20"
+	placeholder="Player name or Player ID"
+	title="Player name or Player ID"
+	value=""
+	class="fabrik_filter search-query input-medium"
+	name="fabrik_list_filter_all_99_com_fabrik_99"
+	id=""
+/>
+
+
+		<input type="button" class="btn fabrik_filter_submit button" value="Go" name="filter" >
+
+	
+		</div>
+	</li>
+</ul>
+</div>
+<div class="fabrikFilterContainer" >
+		<div class="row-fluid">
+				<div class="span6">
+						<table class="filtertable table table-striped">
+				<thead>
+				<tr class="fabrik___heading">
+					<th>Search:</th>
+					<th style="text-align:right">
+													<a class="clearFilters" href="#">
+								<i data-isicon="true" class="icon-refresh" ></i> Clear filters							</a>
+											</th>
+				</tr>
+				</thead>
+				<tfoot>
+				<tr>
+					<td colspan="2"></td>
+				</tr>
+				</tfoot>
+												<tr data-filter-row="vw_profiles___assoc"
+										class="fabrik_row oddRow1">
+									<td>Country</td>
+									<td><select id="vw_profiles___assocvalue" name="fabrik___filter[list_99_com_fabrik_99][value][0]" class="inputbox fabrik_filter input-medium " size="1" data-filter-name="vw_profiles___assoc">
+	<option value="" selected="selected">All</option>
+	<option value="AFG">AFGHANISTAN</option>
+	<option value="ALB">ALBANIA</option>
+	<option value="ALG">ALGERIA</option>
+	<option value="ASA">AMERICAN SAMOA</option>
+	<option value="AND">ANDORRA</option>
+	<option value="ANG">ANGOLA</option>
+	<option value="AIA">ANGUILLA</option>
+	<option value="ANT">ANTIGUA &amp; BARBUDA</option>
+	<option value="ARG">ARGENTINA</option>
+	<option value="ARM">ARMENIA</option>
+	<option value="ARU">ARUBA</option>
+	<option value="ANZ">AUSTRALASIA</option>
+	<option value="AUS">AUSTRALIA</option>
+	<option value="AUT">AUSTRIA</option>
+	<option value="AZE">AZERBAIJAN</option>
+	<option value="BAH">BAHAMAS</option>
+	<option value="BRN">BAHRAIN</option>
+	<option value="BAN">BANGLADESH</option>
+	<option value="BAR">BARBADOS</option>
+	<option value="BLR">BELARUS</option>
+	<option value="BEL">BELGIUM</option>
+	<option value="BIZ">BELIZE</option>
+	<option value="BEN">BENIN</option>
+	<option value="BER">BERMUDA</option>
+	<option value="BHU">BHUTAN</option>
+	<option value="BOH">BOHEMIA</option>
+	<option value="BOL">BOLIVIA</option>
+	<option value="BES">BONAIRE</option>
+	<option value="BIH">BOSNIA &amp; HERZEGOVINA</option>
+	<option value="BOT">BOTSWANA</option>
+	<option value="BRA">BRAZIL</option>
+	<option value="HBR">BRITISH HONDURAS</option>
+	<option value="IVB">BRITISH VIRGIN ISLANDS</option>
+	<option value="BWI">BRITISH WEST INDIES</option>
+	<option value="BRU">BRUNEI</option>
+	<option value="BUL">BULGARIA</option>
+	<option value="BUR">BURKINA FASO</option>
+	<option value="BIR">BURMA</option>
+	<option value="BRM">BURMA</option>
+	<option value="BDI">BURUNDI</option>
+	<option value="CAM">CAMBODIA</option>
+	<option value="CMR">CAMEROON</option>
+	<option value="CAN">CANADA</option>
+	<option value="CPV">CAPE VERDE</option>
+	<option value="CAY">CAYMAN ISLANDS</option>
+	<option value="CAF">CENTRAL AFRICAN REPUBLIC</option>
+	<option value="CEY">CEYLON</option>
+	<option value="CHA">CHAD</option>
+	<option value="CHI">CHILE</option>
+	<option value="CHN">CHINA</option>
+	<option value="TPE">CHINESE TAIPEI</option>
+	<option value="COL">COLOMBIA</option>
+	<option value="COM">COMOROS</option>
+	<option value="COD">CONGO</option>
+	<option value="CGO">CONGO BRAZZAVILLE</option>
+	<option value="COK">COOK ISLANDS</option>
+	<option value="CRC">COSTA RICA</option>
+	<option value="CIV">COTE D'IVOIRE</option>
+	<option value="CRO">CROATIA</option>
+	<option value="HRV">CROATIA (HRV)</option>
+	<option value="CUB">CUBA</option>
+	<option value="CUW">CURACAO</option>
+	<option value="CYP">CYPRUS</option>
+	<option value="CZE">CZECH REPUBLIC</option>
+	<option value="TCH">CZECHOSLOVAKIA</option>
+	<option value="DAH">DAHOMEY</option>
+	<option value="PRK">DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA</option>
+	<option value="DEN">DENMARK</option>
+	<option value="DJI">DJIBOUTI</option>
+	<option value="DMA">DOMINICA</option>
+	<option value="DOM">DOMINICAN REPUBLIC</option>
+	<option value="IHO">DUTCH EAST INDIES</option>
+	<option value="GDR">EAST GERMANY</option>
+	<option value="ECU">ECUADOR</option>
+	<option value="EGY">EGYPT</option>
+	<option value="ESA">EL SALVADOR</option>
+	<option value="ENG">ENGLAND</option>
+	<option value="GEQ">EQUATORIAL GUINEA</option>
+	<option value="ERI">ERITREA</option>
+	<option value="EST">ESTONIA</option>
+	<option value="ETH">ETHIOPIA</option>
+	<option value="FRO">FAROE ISLANDS</option>
+	<option value="FAR">FAROE ISLANDS (FAR)</option>
+	<option value="FIJ">FIJI ISLANDS</option>
+	<option value="FIN">FINLAND</option>
+	<option value="FRA">FRANCE</option>
+	<option value="FGU">FRENCH GUIANA</option>
+	<option value="GAB">GABON</option>
+	<option value="GAM">GAMBIA</option>
+	<option value="GEO">GEORGIA</option>
+	<option value="GER">GERMANY</option>
+	<option value="GHA">GHANA</option>
+	<option value="GIB">GIBRALTAR</option>
+	<option value="GBR">GREAT BRITAIN</option>
+	<option value="GRE">GREECE</option>
+	<option value="GRL">GREENLAND</option>
+	<option value="GRN">GRENADA</option>
+	<option value="GUM">GUAM</option>
+	<option value="GUA">GUATEMALA</option>
+	<option value="GGY">GUERNSEY</option>
+	<option value="GUI">GUINEA</option>
+	<option value="GBS">GUINEA-BISSAU</option>
+	<option value="GUY">GUYANA</option>
+	<option value="HAI">HAITI</option>
+	<option value="HOL">HOLLAND</option>
+	<option value="HON">HONDURAS</option>
+	<option value="HKG">HONG KONG</option>
+	<option value="HUN">HUNGARY</option>
+	<option value="ISL">ICELAND</option>
+	<option value="IND">INDIA</option>
+	<option value="INA">INDONESIA</option>
+	<option value="IRI">IRAN</option>
+	<option value="IRQ">IRAQ</option>
+	<option value="IRL">IRELAND</option>
+	<option value="IFS">IRISH FREE STATE</option>
+	<option value="IRN">ISLAMIC REPUBLIC OF IRAN</option>
+	<option value="IMN">ISLE OF MAN</option>
+	<option value="ISR">ISRAEL</option>
+	<option value="ITA">ITALY</option>
+	<option value="JAM">JAMAICA</option>
+	<option value="JPN">JAPAN</option>
+	<option value="JEY">JERSEY</option>
+	<option value="JOR">JORDAN</option>
+	<option value="KAZ">KAZAKHSTAN</option>
+	<option value="KEN">KENYA</option>
+	<option value="KHM">KHMER REPUBLIC</option>
+	<option value="KIR">KIRIBATI</option>
+	<option value="KOS">KOSOVO</option>
+	<option value="KUW">KUWAIT</option>
+	<option value="KGZ">KYRGYZSTAN</option>
+	<option value="LAO">LAOS</option>
+	<option value="LAT">LATVIA</option>
+	<option value="LBN">LEBANON</option>
+	<option value="LEB">LEBANON (LEB)</option>
+	<option value="LIB">LEBANON (LIB)</option>
+	<option value="LES">LESOTHO</option>
+	<option value="LBR">LIBERIA</option>
+	<option value="LBA">LIBYA</option>
+	<option value="LIE">LIECHTENSTEIN</option>
+	<option value="LTU">LITHUANIA</option>
+	<option value="LUX">LUXEMBOURG</option>
+	<option value="MAC">MACAO</option>
+	<option value="MKD">MACEDONIA</option>
+	<option value="MAD">MADAGASCAR</option>
+	<option value="MAW">MALAWI</option>
+	<option value="MAL">MALAYA</option>
+	<option value="MAS">MALAYSIA</option>
+	<option value="MDV">MALDIVES</option>
+	<option value="MLI">MALI</option>
+	<option value="MLT">MALTA</option>
+	<option value="MHL">MARSHALL ISLANDS</option>
+	<option value="MTN">MAURITANIA</option>
+	<option value="MRI">MAURITIUS</option>
+	<option value="MEX">MEXICO</option>
+	<option value="FSM">MICRONESIA</option>
+	<option value="MDA">MOLDOVA</option>
+	<option value="MON">MONACO</option>
+	<option value="MGL">MONGOLIA</option>
+	<option value="MNE">MONTENEGRO</option>
+	<option value="MAR">MOROCCO</option>
+	<option value="MOZ">MOZAMBIQUE</option>
+	<option value="MYA">MYANMAR</option>
+	<option value="NAM">NAMIBIA</option>
+	<option value="NRU">NAURU</option>
+	<option value="NEP">NEPAL</option>
+	<option value="NED">NETHERLANDS</option>
+	<option value="AHO">NETHERLANDS ANTILLES</option>
+	<option value="NCL">NEW CALEDONIA</option>
+	<option value="NZL">NEW ZEALAND</option>
+	<option value="NCA">NICARAGUA</option>
+	<option value="NIG">NIGER</option>
+	<option value="NGR">NIGERIA</option>
+	<option value="NIU">NIUE</option>
+	<option value="NFK">NORFOLK ISLAND</option>
+	<option value="NBO">NORTH BORNEO</option>
+	<option value="YAR">NORTH YEMEN</option>
+	<option value="MNP">NORTHERN MARIANA ISLANDS</option>
+	<option value="NRH">NORTHRN RHODESIA</option>
+	<option value="NOR">NORWAY</option>
+	<option value="OMA">OMAN</option>
+	<option value="PAK">PAKISTAN</option>
+	<option value="PLW">PALAU</option>
+	<option value="PLE">PALESTINE</option>
+	<option value="PAN">PANAMA</option>
+	<option value="PNG">PAPUA NEW GUINEA</option>
+	<option value="PAR">PARAGUAY</option>
+	<option value="PER">PERU</option>
+	<option value="PHI">PHILLIPINES</option>
+	<option value="POL">POLAND</option>
+	<option value="POR">PORTUGAL</option>
+	<option value="PUR">PUERTO RICO</option>
+	<option value="QAT">QATAR</option>
+	<option value="ROC">REPUBLIC OF CHINA</option>
+	<option value="KOR">REPUBLIC OF KOREA</option>
+	<option value="RHO">RHODESIA</option>
+	<option value="ROU">ROMANIA</option>
+	<option value="RUS">RUSSIA</option>
+	<option value="RU1">RUSSIAN EMPIRE</option>
+	<option value="RWA">RWANDA</option>
+	<option value="SAA">SAAR</option>
+	<option value="SKN">SAINT KITTS &amp; NEVIS</option>
+	<option value="LCA">SAINT LUCIA</option>
+	<option value="MAF">SAINT MARTIN</option>
+	<option value="SAM">SAMOA</option>
+	<option value="SMR">SAN MARINO</option>
+	<option value="STP">SAO TOME AND PRINCIPE</option>
+	<option value="KSA">SAUDI ARABIA</option>
+	<option value="SCO">SCOTLAND</option>
+	<option value="SEN">SENEGAL</option>
+	<option value="SRB">SERBIA</option>
+	<option value="SCG">SERBIA &amp; MONTENEGRO</option>
+	<option value="SEY">SEYCHELLES</option>
+	<option value="SLE">SIERRA LEONE</option>
+	<option value="SGP">SINGAPORE</option>
+	<option value="SIN">SINGAPORE (SIN)</option>
+	<option value="SVK">SLOVAKIA</option>
+	<option value="SLO">SLOVENIA</option>
+	<option value="SVN">SLOVENIA (SVN)</option>
+	<option value="SOL">SOLOMON ISLANDS</option>
+	<option value="SOM">SOMALIA</option>
+	<option value="RSA">SOUTH AFRICA</option>
+	<option value="SSD">SOUTH SUDAN</option>
+	<option value="YMD">SOUTH YEMEN</option>
+	<option value="URS">SOVIET UNION</option>
+	<option value="ESP">SPAIN</option>
+	<option value="SRI">SRI LANKA</option>
+	<option value="VIN">ST. VINCENT</option>
+	<option value="SUD">SUDAN</option>
+	<option value="SUR">SURINAME</option>
+	<option value="SWZ">SWAZILAND</option>
+	<option value="SWE">SWEDEN</option>
+	<option value="SUI">SWITZERLAND</option>
+	<option value="SYR">SYRIA</option>
+	<option value="PYF">TAHITI</option>
+	<option value="TJK">TAJIKISTAN</option>
+	<option value="TAN">TANZANIA</option>
+	<option value="THA">THAILAND</option>
+	<option value="TLS">TIMOR-LESTE</option>
+	<option value="TOG">TOGO</option>
+	<option value="TKL">TOKELAU</option>
+	<option value="TGA">TONGA</option>
+	<option value="TTO">TRINIDAD AND TOBAGO</option>
+	<option value="TUN">TUNISIA</option>
+	<option value="TUR">TURKEY</option>
+	<option value="TKM">TURKMENISTAN</option>
+	<option value="TUV">TUVALU</option>
+	<option value="UGA">UGANDA</option>
+	<option value="UKR">UKRAINE</option>
+	<option value="ULS">ULSTER</option>
+	<option value="UAE">UNITED ARAB EMIRATES</option>
+	<option value="RAU">UNITED ARAB REPUBLIC (RAU)</option>
+	<option value="UAR">UNITED ARAB REPUBLIC (UAR)</option>
+	<option value="COR">UNITED KOREA</option>
+	<option value="USA">UNITED STATES OF AMERICA</option>
+	<option value="EUA">UNITED TEAM OF GERMANY</option>
+	<option value="VOL">UPPER VOLTA</option>
+	<option value="URU">URUGUAY</option>
+	<option value="ISV">US VIRGIN ISLANDS</option>
+	<option value="UZB">UZBEKISTAN</option>
+	<option value="VAN">VANUATU</option>
+	<option value="VEN">VENEZUELA</option>
+	<option value="VIE">VIETNAM</option>
+	<option value="WAL">WALES</option>
+	<option value="WLF">WALLIS &amp; FUTUNA</option>
+	<option value="FRG">WEST GERMANY</option>
+	<option value="YEM">YEMEN</option>
+	<option value="YUG">YUGOSLAVIA</option>
+	<option value="ZAI">ZAIR</option>
+	<option value="ZAM">ZAMBIA</option>
+	<option value="ZIM">ZIMBABUE</option>
+</select>
+
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][condition][0]" value="=" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][join][0]" value="AND" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][key][0]" value="`vw_profiles`.`assoc`" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][search_type][0]" value="normal" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][match][0]" value="1" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][full_words_only][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][eval][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][grouped_to_previous][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][hidden][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_99_com_fabrik_99][elementid][0]" value="1232" /></td>
+								</tr>
+																<tr data-filter-row="vw_profiles___gender"
+										class="fabrik_row oddRow0">
+									<td>Gender</td>
+									<td><select id="vw_profiles___gendervalue" name="fabrik___filter[list_99_com_fabrik_99][value][1]" class="inputbox fabrik_filter input-small " size="1" data-filter-name="vw_profiles___gender">
+	<option value="" selected="selected">All</option>
+	<option value="W">Female</option>
+	<option value="M">Male</option>
+</select>
+
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][condition][1]" value="=" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][join][1]" value="AND" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][key][1]" value="`vw_profiles`.`gender`" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][search_type][1]" value="normal" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][match][1]" value="1" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][full_words_only][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][eval][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][grouped_to_previous][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][hidden][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-small " name="fabrik___filter[list_99_com_fabrik_99][elementid][1]" value="1233" /></td>
+								</tr>
+												<tr>
+					<td colspan="2">
+						<input type="button" class="pull-right  btn-info btn fabrik_filter_submit button"
+								value="Go" name="filter">
+					</td>
+				</tr>
+							</table>
+											</div>
+		</div>
+</div>
+<div class="fabrikDataContainer">
+
+	<table class="table table-striped table-hover" id="list_99_com_fabrik_99" >
+		 <thead>	<tr class="fabrik___heading">
+					<th class="heading fabrik_ordercell vw_profiles___player_id 1230_order fabrik_list_99_group_120 " >
+				<span>Player ID</span>
+			</th>
+					<th class="heading fabrik_ordercell vw_profiles___name 1231_order fabrik_list_99_group_120 " >
+				<span>Name</span>
+			</th>
+					<th class="heading fabrik_ordercell vw_profiles___assoc 1232_order fabrik_list_99_group_120 " >
+				<span>Country</span>
+			</th>
+					<th class="heading fabrik_ordercell vw_profiles___gender 1233_order fabrik_list_99_group_120 " >
+				<span>Gender</span>
+			</th>
+					<th class="heading fabrik_ordercell fabrik_select" style="display:none;">
+				<span><input type="checkbox" name="checkAll" class="list_99_checkAll" id="list_99_checkAll" /></span>
+			</th>
+					<th class="heading fabrik_ordercell fabrik_actions" >
+				<span></span>
+			</th>
+			</tr>
+
+</thead>
+		 <tfoot>
+			<tr class="fabrik___heading">
+				<td colspan="6">
+					<div class="fabrikNav"><div class="list-footer">
+	<div class="limit">
+		<div class="input-prepend input-append">
+			<span class="add-on">
+				<label for="limit99">
+					<small>
+					Display #					</small>
+				</label>
+			</span>
+			<select id="limit99" name="limit99" class="inputbox input-mini" size="1" onchange="">
+	<option value="5">5</option>
+	<option value="10" selected="selected">10</option>
+	<option value="15">15</option>
+	<option value="20">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100">100</option>
+</select>
+			<span class="add-on">
+				<small>
+					Page 4 of 2518 Total: 25177				</small>
+			</span>
+		</div>
+	</div>
+	<div class="pagination">
+	<ul class="pagination-list">
+		<li class="pagination-start ">
+			<a title="Start" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=0">Start</a>		</li>
+		<li class="pagination-prev ">
+			<a rel="prev" title="Prev" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=20">Prev</a>		</li>
+					<li class="">
+				<a title="1" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=0">1</a>			</li>
+					<li class="">
+				<a title="2" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=10">2</a>			</li>
+					<li class="">
+				<a title="3" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=20">3</a>			</li>
+					<li class="active">
+				<a href="#">4</a>			</li>
+					<li class="">
+				<a title="5" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=40">5</a>			</li>
+					<li class="">
+				<a title="6" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=50">6</a>			</li>
+					<li class="">
+				<a title="7" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=60">7</a>			</li>
+					<li class="">
+				<a title="8" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=70">8</a>			</li>
+					<li class="">
+				<a title="9" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=80">9</a>			</li>
+					<li class="">
+				<a title="10" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=90">10</a>			</li>
+		
+		<li class="pagination-next ">
+			<a rel="next" title="Next" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=40">Next</a>		</li>
+		<li class="pagination-end ">
+			<a title="End" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=25170">End</a>		</li>
+	</ul>
+</div>	<input type="hidden" name="limitstart99" id="limitstart99" value="30" />
+</div>
+</div>				</td>
+			</tr>
+		 </tfoot>
+					<tbody class="fabrik_groupdata">
+				<tr class="groupDataMsg" style="display:none">
+					<td class="emptyDataMessage" style="display:none" colspan="6">
+						<div class="emptyDataMessage" style="display:none">
+							No records						</div>
+					</td>
+				</tr>
+			<tr id="list_99_com_fabrik_99_row_100017" class="fabrik_row oddRow0">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			100017		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBAS Fahd		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			UNITED ARAB EMIRATES		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_100017" name="ids[100017]" value="100017" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="100017"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100017&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_100018" class="fabrik_row oddRow1">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			100018		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBAS Fahim		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			PAKISTAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_100018" name="ids[100018]" value="100018" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="100018"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100018&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_100020" class="fabrik_row oddRow0">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			100020		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBAS Roy		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			AUSTRALIA		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_100020" name="ids[100020]" value="100020" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="100020"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100020&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_100023" class="fabrik_row oddRow1">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			100023		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBAS Saleem		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			PAKISTAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_100023" name="ids[100023]" value="100023" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="100023"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100023&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_112051" class="fabrik_row oddRow0">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			112051		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASI Amirhossein		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			IRAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_112051" name="ids[112051]" value="112051" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="112051"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=112051&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_134246" class="fabrik_row oddRow1">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			134246		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASI Amirreza		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			IRAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_134246" name="ids[134246]" value="134246" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="134246"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=134246&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_111339" class="fabrik_row oddRow0">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			111339		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASI MWINYI Mohamed		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			TANZANIA		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_111339" name="ids[111339]" value="111339" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="111339"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=111339&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_108135" class="fabrik_row oddRow1">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			108135		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASI Saeid		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			IRAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_108135" name="ids[108135]" value="108135" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="108135"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=108135&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_121916" class="fabrik_row oddRow0">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			121916		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASPOUR Amir Hossein		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			IRAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_121916" name="ids[121916]" value="121916" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="121916"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=121916&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+<tr id="list_99_com_fabrik_99_row_100024" class="fabrik_row oddRow1">
+			<td class="vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer" >
+			100024		</td>
+			<td class="vw_profiles___name fabrik_element fabrik_list_99_group_120" >
+			ABBASSI Mohammad Ali		</td>
+			<td class="vw_profiles___assoc fabrik_element fabrik_list_99_group_120" >
+			IRAN		</td>
+			<td class="vw_profiles___gender fabrik_element fabrik_list_99_group_120" >
+			Male		</td>
+			<td class="fabrik_select fabrik_element" style="display:none;">
+			<input type="checkbox" id="id_100024" name="ids[100024]" value="100024" /><div style="display:none">
+</div>		</td>
+			<td class="fabrik_actions fabrik_element" >
+			<div class="btn-group">
+<a data-loadmethod="xhr"
+	class="btn fabrik_view fabrik__rowlink btn-default" 	data-list="list_99_com_fabrik_99"
+	data-isajax="0"
+	data-rowid="100024"
+	data-iscustom="0"
+	href="/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100024&amp;Itemid=266" 
+	title="View Player's profile" 
+	target="_self">
+<i data-isicon="true" class="icon-search " ></i> <span class="hidden">View Player's profile</span></a></div>
+		</td>
+	</tr>
+		 	</tbody>
+						</table>
+	<input type="hidden" name="option" value="com_fabrik" />
+<input type="hidden" name="orderdir" value="" />
+<input type="hidden" name="orderby" value="" />
+<input type="hidden" name="view" value="list" />
+<input type="hidden" name="listid" value="99"/>
+<input type="hidden" name="listref" value="99_com_fabrik_99"/>
+<input type="hidden" name="Itemid" value="266"/>
+<input type="hidden" name="fabrik_referrer" value="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0&amp;limitstart99=30" />
+<input type="hidden" name="3a0262d7696f594e79e137c16682fc32" value="1" />
+<input type="hidden" name="format" value="html" />
+<input type="hidden" name="packageId" value="0" />
+<input type="hidden" name="task" value="" />
+<input type="hidden" name="fabrik_listplugin_name" value="" />
+<input type="hidden" name="fabrik_listplugin_renderOrder" value="" />
+<input type="hidden" name="fabrik_listplugin_options" value="" />
+<input type="hidden" name="incfilters" value="1" /></div>
+</form>
+													</div>
+																								</div>
+																					</div>
+									</div>
+															</div>
+									</div>
+		</div>
+			</div>
+			<div id="jsn-footer">
+			<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+									<div id="jsn-pos-footer" class="span12">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>Developed by <a style="color: #004d40;" href="mailto:dmessinis@ittf.com">Dimosthenis E. Messinis <br /></a>Results raw data provided by <a style="color: #004d40;" href="mailto:zbencsik@ittf.com" rel="alternate">Zoltan Bencsik</a>, WR raw data provided by <span style="color: #004d40;">Matt Solt</span><br />Best viewed with the latest versions of the modern browsers (Firefox, Chrome, Safari, Opera)</p></div><div class="clearbreak"></div></div></div></div>
+					</div>
+									<div class="clearbreak"></div>
+			</div>
+		</div>
+		</div>
+	<a id="jsn-gotoplink" href="http://results.ittf.link/index.php#top">
+		<span>Go to top</span>
+	</a>
+	
+<script>
+            setTimeout(function(){
+            jQuery.ajaxSetup({
+  cache: true
+});
+				 jQuery.getScript( "http://results.ittf.link/media/com_fabrik/js/lib/require/require.js", function() {
+				
+define('jquery', [], function() {
+			return jQuery;
+		});
+define('moment', [], function() {
+			return moment;
+		});
+requirejs.config(
+{"baseUrl":"http:\/\/results.ittf.link\/","paths":{"fab":"media\/com_fabrik\/js\/dist","lib":"media\/com_fabrik\/js\/lib","element":"plugins\/fabrik_element","list":"plugins\/fabrik_list","form":"plugins\/fabrik_form","cron":"plugins\/fabrik_cron","viz":"plugins\/fabrik_visualization","admin":"administrator\/components\/com_fabrik\/views","adminfields":"administrator\/components\/com_fabrik\/models\/fields","jQueryUI":"media\/com_fabrik\/js\/lib\/jquery-ui\/jquery-ui","chosen":"media\/jui\/js\/chosen.jquery.min","ajaxChosen":"media\/jui\/js\/ajax-chosen.min","punycode":"media\/system\/js\/punycode"},"shim":{"fab\/fabrik":{"deps":["fab\/utils","jquery","fab\/mootools-ext","lib\/Event.mock"]},"fab\/autocomplete-bootstrap":{"deps":["fab\/fabrik"]},"jQueryUI":{"deps":["jquery"]},"fab\/list":{"deps":[]}},"waitSeconds":30}
+);
+
+
+requirejs(['fab/chosen-loader', 'fab/fabrik', 'fab/tipsBootStrapMock'], function (Chosen, Fabrik, FloatingTips) {
+	Fabrik.liveSite = 'http://results.ittf.link/';
+	Fabrik.package = 'fabrik';
+	Fabrik.debug = false;
+	Fabrik.jLayouts = {"modal-state-label":"<span class=\"label label-inverse\">\n\t<span data-modal-state-label><\/span>:\n\t<span data-modal-state-value> <\/span>\n\t<a data-filter-clear=\"\" href=\"#\" style=\"color: white;\">\n\t\t<i data-isicon=\"true\" class=\"icon-cancel\" style=\"text-align: right; \"><\/i>\t<\/a>\n<\/span>","exportcsv":"\n<div id=\"ajax_links\" class=\"fabrikWindow-modal modal\">\n\t<div class=\"modal-header\">\n\t\t<h3 class=\"handlelabel\" data-role=\"title\">\n\t\t\tExport csv jlayout\t\t<\/h3>\n\t\t\t\t<a href=\"#\" class=\"closeFabWin\" data-role=\"close\">\n\t\t\t<span class=\"icon-cancel icon-remove-sign\"><\/span>\n\t\t<\/a>\n\t<\/div>\n\t<div class=\"contentWrapper\">\n\t\t<div class=\"itemContent\">\n\t\t\t<div class=\"itemContentPadder\">\n\t\t\t\t\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<\/div>\n","modal-close":"<a href=\"#\" class=\"closeFabWin\" data-role=\"close\">\n\t<span class=\"icon-cancel icon-remove-sign\"><\/span>\n<\/a>","icon-expand":"<i data-isicon=\"true\" class=\"icon-expand\" ><\/i>","icon-full-screen":"<i data-isicon=\"true\" class=\"icon-out-2 icon-fullscreen\" ><\/i>"};
+
+	Fabrik.bootstrapped = true;
+	Fabrik.tips = new FloatingTips('.fabrikTip', {"tipfx":"Fx.Transitions.linear.easeIn","duration":"500","distance":50,"fadein":false});
+	Fabrik.addEvent('fabrik.list.updaterows', function () {
+		// Reattach new tips after list redraw
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.plugin.inlineedit.editing', function () {
+		Fabrik.tips.hideAll();
+	});
+	Fabrik.addEvent('fabrik.list.inlineedit.setData', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.form.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.list.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+});
+
+
+requirejs(['fab/window', 'fab/list', 'fab/listfilter', 'fab/list-plugin', 'element/calc/list-calc-min'], function (Window, FbList, FbListFilter, ListPlugin, FbCalcList) {
+window.addEvent('domready', function () {
+	var list = new FbList('99',
+	{"csvChoose":false,"csvOpts":{"excel":0,"inctabledata":1,"incraw":1,"inccalcs":0,"custom_qs":"","exportLink":"\/index.php?option=com_fabrik&view=list&listid=99&Itemid=266&format=csv","incfilters":0,"popupwidth":"340","optswidth":"200"},"csvFields":[],"admin":false,"ajax":1,"ajax_links":false,"links":{"detail":"","edit":"","add":""},"filterMethod":"submitform","advancedFilters":[],"resetFilters":false,"form":"listform_99_com_fabrik_99","headings":"['vw_profiles___player_id','vw_profiles___name','vw_profiles___assoc','vw_profiles___gender']","labels":{"vw_profiles___player_id":"Player ID","vw_profiles___name":"Name","vw_profiles___assoc":"Country","vw_profiles___gender":"Gender","fabrik_select":"","fabrik_actions":""},"primaryKey":"`vw_profiles`.`player_id`","Itemid":"266","listRef":"99_com_fabrik_99","formid":"99","canEdit":"0","canView":"1","page":"\/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266","isGrouped":false,"toggleCols":false,"j3":true,"singleOrdering":false,"formels":[{"name":"photo","label":"Photo"},{"name":"dob","label":"Age"},{"name":"age","label":"Age"},{"name":"activity","label":"Activity"},{"name":"handness","label":"Handness"},{"name":"style","label":"Playing style"},{"name":"grip","label":"Grip"},{"name":"current_position","label":"Current WR position"},{"name":"best_position","label":"Best WR position"},{"name":"progress","label":"WR Progress"},{"name":"WTresults","label":"WT Results"},{"name":"Otherresults","label":"Other Results"},{"name":"Dblsresults","label":"Doubles' Results"},{"name":"Teamresults","label":"Teams' Results"},{"name":"Totalmatches","label":"Total matches"},{"name":"Totalwins","label":"Total wins"},{"name":"Totalloses","label":"Total loses"},{"name":"Yearmatches","label":"Current year matches"},{"name":"Yearwins","label":"Current year wins"},{"name":"Yearloses","label":"Current year loses"},{"name":"WTTC","label":"WTTC Participation"}],"fabrik_show_in_list":[],"popup_width":"","popup_height":"","popup_edit_label":"Edit","popup_view_label":"View Player's profile","popup_add_label":"Add","limitLength":"10","limitStart":30,"tmpl":"bootstrap","data":[[{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"100017","vw_profiles___player_id_raw":"100017","vw_profiles___name":"ABBAS Fahd","vw_profiles___name_raw":"ABBAS Fahd","vw_profiles___assoc_raw":"UAE","vw_profiles___assoc":"UNITED ARAB EMIRATES","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"1972-12-25","vw_profiles___dob_raw":"1972-12-25","vw_profiles___age":45,"vw_profiles___age_raw":"45","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"100017","__pk_val":"100017","fabrik_select":"<input type=\"checkbox\" id=\"id_100017\" name=\"ids[100017]\" value=\"100017\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100017&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=100017&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100017\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100017&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100017\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100017&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":31,"total":25177,"id":"list_99_com_fabrik_99_row_100017","class":"fabrik_row oddRow0"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"100018","vw_profiles___player_id_raw":"100018","vw_profiles___name":"ABBAS Fahim","vw_profiles___name_raw":"ABBAS Fahim","vw_profiles___assoc_raw":"PAK","vw_profiles___assoc":"PAKISTAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"1986-11-17","vw_profiles___dob_raw":"1986-11-17","vw_profiles___age":31,"vw_profiles___age_raw":"31","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"100018","__pk_val":"100018","fabrik_select":"<input type=\"checkbox\" id=\"id_100018\" name=\"ids[100018]\" value=\"100018\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100018&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=100018&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100018\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100018&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100018\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100018&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":32,"total":25177,"id":"list_99_com_fabrik_99_row_100018","class":"fabrik_row oddRow1"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"100020","vw_profiles___player_id_raw":"100020","vw_profiles___name":"ABBAS Roy","vw_profiles___name_raw":"ABBAS Roy","vw_profiles___assoc_raw":"AUS","vw_profiles___assoc":"AUSTRALIA","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"1985-02-23","vw_profiles___dob_raw":"1985-02-23","vw_profiles___age":33,"vw_profiles___age_raw":"33","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"100020","__pk_val":"100020","fabrik_select":"<input type=\"checkbox\" id=\"id_100020\" name=\"ids[100020]\" value=\"100020\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100020&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=100020&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100020\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100020&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100020\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100020&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":33,"total":25177,"id":"list_99_com_fabrik_99_row_100020","class":"fabrik_row oddRow0"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"100023","vw_profiles___player_id_raw":"100023","vw_profiles___name":"ABBAS Saleem","vw_profiles___name_raw":"ABBAS Saleem","vw_profiles___assoc_raw":"PAK","vw_profiles___assoc":"PAKISTAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"1975-06-30","vw_profiles___dob_raw":"1975-06-30","vw_profiles___age":42,"vw_profiles___age_raw":"42","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"100023","__pk_val":"100023","fabrik_select":"<input type=\"checkbox\" id=\"id_100023\" name=\"ids[100023]\" value=\"100023\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100023&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=100023&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100023\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100023&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100023\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100023&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":34,"total":25177,"id":"list_99_com_fabrik_99_row_100023","class":"fabrik_row oddRow1"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"112051","vw_profiles___player_id_raw":"112051","vw_profiles___name":"ABBASI Amirhossein","vw_profiles___name_raw":"ABBASI Amirhossein","vw_profiles___assoc_raw":"IRI","vw_profiles___assoc":"IRAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"1993-06-27","vw_profiles___dob_raw":"1993-06-27","vw_profiles___age":24,"vw_profiles___age_raw":"24","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"112051","__pk_val":"112051","fabrik_select":"<input type=\"checkbox\" id=\"id_112051\" name=\"ids[112051]\" value=\"112051\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=112051&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=112051&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"112051\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=112051&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"112051\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=112051&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":35,"total":25177,"id":"list_99_com_fabrik_99_row_112051","class":"fabrik_row oddRow0"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"134246","vw_profiles___player_id_raw":"134246","vw_profiles___name":"ABBASI Amirreza","vw_profiles___name_raw":"ABBASI Amirreza","vw_profiles___assoc_raw":"IRI","vw_profiles___assoc":"IRAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"2000-06-01","vw_profiles___dob_raw":"2000-06-01","vw_profiles___age":18,"vw_profiles___age_raw":"18","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":"RH","vw_profiles___handness_raw":"RH","vw_profiles___style":"D","vw_profiles___style_raw":"D","vw_profiles___grip":"SH","vw_profiles___grip_raw":"SH","vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"134246","__pk_val":"134246","fabrik_select":"<input type=\"checkbox\" id=\"id_134246\" name=\"ids[134246]\" value=\"134246\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=134246&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=134246&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"134246\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=134246&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"134246\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=134246&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":36,"total":25177,"id":"list_99_com_fabrik_99_row_134246","class":"fabrik_row oddRow1"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"111339","vw_profiles___player_id_raw":"111339","vw_profiles___name":"ABBASI MWINYI Mohamed","vw_profiles___name_raw":"ABBASI MWINYI Mohamed","vw_profiles___assoc_raw":"TAN","vw_profiles___assoc":"TANZANIA","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":null,"vw_profiles___dob_raw":null,"vw_profiles___age":0,"vw_profiles___age_raw":"0","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"111339","__pk_val":"111339","fabrik_select":"<input type=\"checkbox\" id=\"id_111339\" name=\"ids[111339]\" value=\"111339\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=111339&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=111339&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"111339\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=111339&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"111339\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=111339&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":37,"total":25177,"id":"list_99_com_fabrik_99_row_111339","class":"fabrik_row oddRow0"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"108135","vw_profiles___player_id_raw":"108135","vw_profiles___name":"ABBASI Saeid","vw_profiles___name_raw":"ABBASI Saeid","vw_profiles___assoc_raw":"IRI","vw_profiles___assoc":"IRAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":null,"vw_profiles___dob_raw":null,"vw_profiles___age":0,"vw_profiles___age_raw":"0","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"108135","__pk_val":"108135","fabrik_select":"<input type=\"checkbox\" id=\"id_108135\" name=\"ids[108135]\" value=\"108135\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=108135&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=108135&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"108135\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=108135&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"108135\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=108135&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":38,"total":25177,"id":"list_99_com_fabrik_99_row_108135","class":"fabrik_row oddRow1"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"121916","vw_profiles___player_id_raw":"121916","vw_profiles___name":"ABBASPOUR Amir Hossein","vw_profiles___name_raw":"ABBASPOUR Amir Hossein","vw_profiles___assoc_raw":"IRI","vw_profiles___assoc":"IRAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":"2000-01-10","vw_profiles___dob_raw":"2000-01-10","vw_profiles___age":18,"vw_profiles___age_raw":"18","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"121916","__pk_val":"121916","fabrik_select":"<input type=\"checkbox\" id=\"id_121916\" name=\"ids[121916]\" value=\"121916\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=121916&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=121916&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"121916\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=121916&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"121916\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=121916&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":39,"total":25177,"id":"list_99_com_fabrik_99_row_121916","class":"fabrik_row oddRow0"},{"data":{"vw_profiles___photo":null,"vw_profiles___photo_raw":null,"vw_profiles___player_id":"100024","vw_profiles___player_id_raw":"100024","vw_profiles___name":"ABBASSI Mohammad Ali","vw_profiles___name_raw":"ABBASSI Mohammad Ali","vw_profiles___assoc_raw":"IRI","vw_profiles___assoc":"IRAN","vw_profiles___gender":"Male","vw_profiles___gender_raw":"M","vw_profiles___dob":null,"vw_profiles___dob_raw":null,"vw_profiles___age":0,"vw_profiles___age_raw":"0","vw_profiles___activity":"T","vw_profiles___activity_raw":"T","vw_profiles___handness":null,"vw_profiles___handness_raw":null,"vw_profiles___style":null,"vw_profiles___style_raw":null,"vw_profiles___grip":null,"vw_profiles___grip_raw":null,"vw_profiles___current_position_raw":null,"vw_profiles___best_position_raw":null,"vw_profiles___progress_raw":null,"vw_profiles___WTresults_raw":null,"vw_profiles___Otherresults_raw":null,"vw_profiles___Dblsresults_raw":null,"vw_profiles___Teamresults_raw":null,"vw_profiles___Totalmatches_raw":null,"vw_profiles___Totalwins_raw":null,"vw_profiles___Totalloses_raw":null,"vw_profiles___Yearmatches_raw":null,"vw_profiles___Yearwins_raw":null,"vw_profiles___Yearloses_raw":null,"vw_profiles___WTTC_raw":null,"slug":"100024","__pk_val":"100024","fabrik_select":"<input type=\"checkbox\" id=\"id_100024\" name=\"ids[100024]\" value=\"100024\" \/><div style=\"display:none\">\n<\/div>","fabrik_view_url":"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100024&amp;Itemid=266","fabrik_edit_url":"\/index.php?option=com_fabrik&amp;view=form&amp;Itemid=266&amp;formid=99&amp;rowid=100024&amp;listid=99","fabrik_view":"<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100024\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100024&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a>","fabrik_edit":"","fabrik_actions":"<div class=\"btn-group\">\n<a data-loadmethod=\"xhr\"\n\tclass=\"btn fabrik_view fabrik__rowlink btn-default\" \tdata-list=\"list_99_com_fabrik_99\"\n\tdata-isajax=\"0\"\n\tdata-rowid=\"100024\"\n\tdata-iscustom=\"0\"\n\thref=\"\/index.php?option=com_fabrik&amp;view=details&amp;formid=99&amp;rowid=100024&amp;Itemid=266\" \n\ttitle=\"View Player's profile\" \n\ttarget=\"_self\">\n<i data-isicon=\"true\" class=\"icon-search \" ><\/i> <span class=\"hidden\">View Player's profile<\/span><\/a><\/div>\n"},"cursor":40,"total":25177,"id":"list_99_com_fabrik_99_row_100024","class":"fabrik_row oddRow1"}]],"groupByOpts":{"isGrouped":false,"collapseOthers":false,"startCollapsed":false,"bootstrap":true},"itemTemplate":"<tr id=\"\" class=\"fabrik_row\">\n\t\t\t<td class=\"vw_profiles___player_id fabrik_element fabrik_list_99_group_120 integer\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"vw_profiles___name fabrik_element fabrik_list_99_group_120\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"vw_profiles___assoc fabrik_element fabrik_list_99_group_120\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"vw_profiles___gender fabrik_element fabrik_list_99_group_120\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fabrik_select fabrik_element\" style=\"display:none;\">\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fabrik_actions fabrik_element\" >\n\t\t\t\t\t<\/td>\n\t<\/tr>\n","winid":""}
+	);
+	Fabrik.addBlock('list_99_com_fabrik_99', list);
+	Fabrik.filter_listform_99_com_fabrik_99 = new FbListFilter({"container":"listform_99_com_fabrik_99","type":"list","id":99,"ref":"99_com_fabrik_99","advancedSearch":{"controller":"list"},"filters":[{"id":"searchall_99_com_fabrik_99","displayValue":"","filter":"\n<input\n\ttype=\"search\"\n\tsize=\"20\"\n\tplaceholder=\"Player name or Player ID\"\n\ttitle=\"Player name or Player ID\"\n\tvalue=\"\"\n\tclass=\"fabrik_filter search-query input-medium\"\n\tname=\"fabrik_list_filter_all_99_com_fabrik_99\"\n\tid=\"\"\n\/>\n\n","name":"all","label":"Player name or Player ID"},{"name":"vw_profiles___assoc","id":"vw_profiles___assocvalue","filter":"<select id=\"vw_profiles___assocvalue\" name=\"fabrik___filter[list_99_com_fabrik_99][value][0]\" class=\"inputbox fabrik_filter input-medium \" size=\"1\" data-filter-name=\"vw_profiles___assoc\">\n\t<option value=\"\" selected=\"selected\">All<\/option>\n\t<option value=\"AFG\">AFGHANISTAN<\/option>\n\t<option value=\"ALB\">ALBANIA<\/option>\n\t<option value=\"ALG\">ALGERIA<\/option>\n\t<option value=\"ASA\">AMERICAN SAMOA<\/option>\n\t<option value=\"AND\">ANDORRA<\/option>\n\t<option value=\"ANG\">ANGOLA<\/option>\n\t<option value=\"AIA\">ANGUILLA<\/option>\n\t<option value=\"ANT\">ANTIGUA &amp; BARBUDA<\/option>\n\t<option value=\"ARG\">ARGENTINA<\/option>\n\t<option value=\"ARM\">ARMENIA<\/option>\n\t<option value=\"ARU\">ARUBA<\/option>\n\t<option value=\"ANZ\">AUSTRALASIA<\/option>\n\t<option value=\"AUS\">AUSTRALIA<\/option>\n\t<option value=\"AUT\">AUSTRIA<\/option>\n\t<option value=\"AZE\">AZERBAIJAN<\/option>\n\t<option value=\"BAH\">BAHAMAS<\/option>\n\t<option value=\"BRN\">BAHRAIN<\/option>\n\t<option value=\"BAN\">BANGLADESH<\/option>\n\t<option value=\"BAR\">BARBADOS<\/option>\n\t<option value=\"BLR\">BELARUS<\/option>\n\t<option value=\"BEL\">BELGIUM<\/option>\n\t<option value=\"BIZ\">BELIZE<\/option>\n\t<option value=\"BEN\">BENIN<\/option>\n\t<option value=\"BER\">BERMUDA<\/option>\n\t<option value=\"BHU\">BHUTAN<\/option>\n\t<option value=\"BOH\">BOHEMIA<\/option>\n\t<option value=\"BOL\">BOLIVIA<\/option>\n\t<option value=\"BES\">BONAIRE<\/option>\n\t<option value=\"BIH\">BOSNIA &amp; HERZEGOVINA<\/option>\n\t<option value=\"BOT\">BOTSWANA<\/option>\n\t<option value=\"BRA\">BRAZIL<\/option>\n\t<option value=\"HBR\">BRITISH HONDURAS<\/option>\n\t<option value=\"IVB\">BRITISH VIRGIN ISLANDS<\/option>\n\t<option value=\"BWI\">BRITISH WEST INDIES<\/option>\n\t<option value=\"BRU\">BRUNEI<\/option>\n\t<option value=\"BUL\">BULGARIA<\/option>\n\t<option value=\"BUR\">BURKINA FASO<\/option>\n\t<option value=\"BIR\">BURMA<\/option>\n\t<option value=\"BRM\">BURMA<\/option>\n\t<option value=\"BDI\">BURUNDI<\/option>\n\t<option value=\"CAM\">CAMBODIA<\/option>\n\t<option value=\"CMR\">CAMEROON<\/option>\n\t<option value=\"CAN\">CANADA<\/option>\n\t<option value=\"CPV\">CAPE VERDE<\/option>\n\t<option value=\"CAY\">CAYMAN ISLANDS<\/option>\n\t<option value=\"CAF\">CENTRAL AFRICAN REPUBLIC<\/option>\n\t<option value=\"CEY\">CEYLON<\/option>\n\t<option value=\"CHA\">CHAD<\/option>\n\t<option value=\"CHI\">CHILE<\/option>\n\t<option value=\"CHN\">CHINA<\/option>\n\t<option value=\"TPE\">CHINESE TAIPEI<\/option>\n\t<option value=\"COL\">COLOMBIA<\/option>\n\t<option value=\"COM\">COMOROS<\/option>\n\t<option value=\"COD\">CONGO<\/option>\n\t<option value=\"CGO\">CONGO BRAZZAVILLE<\/option>\n\t<option value=\"COK\">COOK ISLANDS<\/option>\n\t<option value=\"CRC\">COSTA RICA<\/option>\n\t<option value=\"CIV\">COTE D'IVOIRE<\/option>\n\t<option value=\"CRO\">CROATIA<\/option>\n\t<option value=\"HRV\">CROATIA (HRV)<\/option>\n\t<option value=\"CUB\">CUBA<\/option>\n\t<option value=\"CUW\">CURACAO<\/option>\n\t<option value=\"CYP\">CYPRUS<\/option>\n\t<option value=\"CZE\">CZECH REPUBLIC<\/option>\n\t<option value=\"TCH\">CZECHOSLOVAKIA<\/option>\n\t<option value=\"DAH\">DAHOMEY<\/option>\n\t<option value=\"PRK\">DEMOCRATIC PEOPLE'S REPUBLIC OF KOREA<\/option>\n\t<option value=\"DEN\">DENMARK<\/option>\n\t<option value=\"DJI\">DJIBOUTI<\/option>\n\t<option value=\"DMA\">DOMINICA<\/option>\n\t<option value=\"DOM\">DOMINICAN REPUBLIC<\/option>\n\t<option value=\"IHO\">DUTCH EAST INDIES<\/option>\n\t<option value=\"GDR\">EAST GERMANY<\/option>\n\t<option value=\"ECU\">ECUADOR<\/option>\n\t<option value=\"EGY\">EGYPT<\/option>\n\t<option value=\"ESA\">EL SALVADOR<\/option>\n\t<option value=\"ENG\">ENGLAND<\/option>\n\t<option value=\"GEQ\">EQUATORIAL GUINEA<\/option>\n\t<option value=\"ERI\">ERITREA<\/option>\n\t<option value=\"EST\">ESTONIA<\/option>\n\t<option value=\"ETH\">ETHIOPIA<\/option>\n\t<option value=\"FRO\">FAROE ISLANDS<\/option>\n\t<option value=\"FAR\">FAROE ISLANDS (FAR)<\/option>\n\t<option value=\"FIJ\">FIJI ISLANDS<\/option>\n\t<option value=\"FIN\">FINLAND<\/option>\n\t<option value=\"FRA\">FRANCE<\/option>\n\t<option value=\"FGU\">FRENCH GUIANA<\/option>\n\t<option value=\"GAB\">GABON<\/option>\n\t<option value=\"GAM\">GAMBIA<\/option>\n\t<option value=\"GEO\">GEORGIA<\/option>\n\t<option value=\"GER\">GERMANY<\/option>\n\t<option value=\"GHA\">GHANA<\/option>\n\t<option value=\"GIB\">GIBRALTAR<\/option>\n\t<option value=\"GBR\">GREAT BRITAIN<\/option>\n\t<option value=\"GRE\">GREECE<\/option>\n\t<option value=\"GRL\">GREENLAND<\/option>\n\t<option value=\"GRN\">GRENADA<\/option>\n\t<option value=\"GUM\">GUAM<\/option>\n\t<option value=\"GUA\">GUATEMALA<\/option>\n\t<option value=\"GGY\">GUERNSEY<\/option>\n\t<option value=\"GUI\">GUINEA<\/option>\n\t<option value=\"GBS\">GUINEA-BISSAU<\/option>\n\t<option value=\"GUY\">GUYANA<\/option>\n\t<option value=\"HAI\">HAITI<\/option>\n\t<option value=\"HOL\">HOLLAND<\/option>\n\t<option value=\"HON\">HONDURAS<\/option>\n\t<option value=\"HKG\">HONG KONG<\/option>\n\t<option value=\"HUN\">HUNGARY<\/option>\n\t<option value=\"ISL\">ICELAND<\/option>\n\t<option value=\"IND\">INDIA<\/option>\n\t<option value=\"INA\">INDONESIA<\/option>\n\t<option value=\"IRI\">IRAN<\/option>\n\t<option value=\"IRQ\">IRAQ<\/option>\n\t<option value=\"IRL\">IRELAND<\/option>\n\t<option value=\"IFS\">IRISH FREE STATE<\/option>\n\t<option value=\"IRN\">ISLAMIC REPUBLIC OF IRAN<\/option>\n\t<option value=\"IMN\">ISLE OF MAN<\/option>\n\t<option value=\"ISR\">ISRAEL<\/option>\n\t<option value=\"ITA\">ITALY<\/option>\n\t<option value=\"JAM\">JAMAICA<\/option>\n\t<option value=\"JPN\">JAPAN<\/option>\n\t<option value=\"JEY\">JERSEY<\/option>\n\t<option value=\"JOR\">JORDAN<\/option>\n\t<option value=\"KAZ\">KAZAKHSTAN<\/option>\n\t<option value=\"KEN\">KENYA<\/option>\n\t<option value=\"KHM\">KHMER REPUBLIC<\/option>\n\t<option value=\"KIR\">KIRIBATI<\/option>\n\t<option value=\"KOS\">KOSOVO<\/option>\n\t<option value=\"KUW\">KUWAIT<\/option>\n\t<option value=\"KGZ\">KYRGYZSTAN<\/option>\n\t<option value=\"LAO\">LAOS<\/option>\n\t<option value=\"LAT\">LATVIA<\/option>\n\t<option value=\"LBN\">LEBANON<\/option>\n\t<option value=\"LEB\">LEBANON (LEB)<\/option>\n\t<option value=\"LIB\">LEBANON (LIB)<\/option>\n\t<option value=\"LES\">LESOTHO<\/option>\n\t<option value=\"LBR\">LIBERIA<\/option>\n\t<option value=\"LBA\">LIBYA<\/option>\n\t<option value=\"LIE\">LIECHTENSTEIN<\/option>\n\t<option value=\"LTU\">LITHUANIA<\/option>\n\t<option value=\"LUX\">LUXEMBOURG<\/option>\n\t<option value=\"MAC\">MACAO<\/option>\n\t<option value=\"MKD\">MACEDONIA<\/option>\n\t<option value=\"MAD\">MADAGASCAR<\/option>\n\t<option value=\"MAW\">MALAWI<\/option>\n\t<option value=\"MAL\">MALAYA<\/option>\n\t<option value=\"MAS\">MALAYSIA<\/option>\n\t<option value=\"MDV\">MALDIVES<\/option>\n\t<option value=\"MLI\">MALI<\/option>\n\t<option value=\"MLT\">MALTA<\/option>\n\t<option value=\"MHL\">MARSHALL ISLANDS<\/option>\n\t<option value=\"MTN\">MAURITANIA<\/option>\n\t<option value=\"MRI\">MAURITIUS<\/option>\n\t<option value=\"MEX\">MEXICO<\/option>\n\t<option value=\"FSM\">MICRONESIA<\/option>\n\t<option value=\"MDA\">MOLDOVA<\/option>\n\t<option value=\"MON\">MONACO<\/option>\n\t<option value=\"MGL\">MONGOLIA<\/option>\n\t<option value=\"MNE\">MONTENEGRO<\/option>\n\t<option value=\"MAR\">MOROCCO<\/option>\n\t<option value=\"MOZ\">MOZAMBIQUE<\/option>\n\t<option value=\"MYA\">MYANMAR<\/option>\n\t<option value=\"NAM\">NAMIBIA<\/option>\n\t<option value=\"NRU\">NAURU<\/option>\n\t<option value=\"NEP\">NEPAL<\/option>\n\t<option value=\"NED\">NETHERLANDS<\/option>\n\t<option value=\"AHO\">NETHERLANDS ANTILLES<\/option>\n\t<option value=\"NCL\">NEW CALEDONIA<\/option>\n\t<option value=\"NZL\">NEW ZEALAND<\/option>\n\t<option value=\"NCA\">NICARAGUA<\/option>\n\t<option value=\"NIG\">NIGER<\/option>\n\t<option value=\"NGR\">NIGERIA<\/option>\n\t<option value=\"NIU\">NIUE<\/option>\n\t<option value=\"NFK\">NORFOLK ISLAND<\/option>\n\t<option value=\"NBO\">NORTH BORNEO<\/option>\n\t<option value=\"YAR\">NORTH YEMEN<\/option>\n\t<option value=\"MNP\">NORTHERN MARIANA ISLANDS<\/option>\n\t<option value=\"NRH\">NORTHRN RHODESIA<\/option>\n\t<option value=\"NOR\">NORWAY<\/option>\n\t<option value=\"OMA\">OMAN<\/option>\n\t<option value=\"PAK\">PAKISTAN<\/option>\n\t<option value=\"PLW\">PALAU<\/option>\n\t<option value=\"PLE\">PALESTINE<\/option>\n\t<option value=\"PAN\">PANAMA<\/option>\n\t<option value=\"PNG\">PAPUA NEW GUINEA<\/option>\n\t<option value=\"PAR\">PARAGUAY<\/option>\n\t<option value=\"PER\">PERU<\/option>\n\t<option value=\"PHI\">PHILLIPINES<\/option>\n\t<option value=\"POL\">POLAND<\/option>\n\t<option value=\"POR\">PORTUGAL<\/option>\n\t<option value=\"PUR\">PUERTO RICO<\/option>\n\t<option value=\"QAT\">QATAR<\/option>\n\t<option value=\"ROC\">REPUBLIC OF CHINA<\/option>\n\t<option value=\"KOR\">REPUBLIC OF KOREA<\/option>\n\t<option value=\"RHO\">RHODESIA<\/option>\n\t<option value=\"ROU\">ROMANIA<\/option>\n\t<option value=\"RUS\">RUSSIA<\/option>\n\t<option value=\"RU1\">RUSSIAN EMPIRE<\/option>\n\t<option value=\"RWA\">RWANDA<\/option>\n\t<option value=\"SAA\">SAAR<\/option>\n\t<option value=\"SKN\">SAINT KITTS &amp; NEVIS<\/option>\n\t<option value=\"LCA\">SAINT LUCIA<\/option>\n\t<option value=\"MAF\">SAINT MARTIN<\/option>\n\t<option value=\"SAM\">SAMOA<\/option>\n\t<option value=\"SMR\">SAN MARINO<\/option>\n\t<option value=\"STP\">SAO TOME AND PRINCIPE<\/option>\n\t<option value=\"KSA\">SAUDI ARABIA<\/option>\n\t<option value=\"SCO\">SCOTLAND<\/option>\n\t<option value=\"SEN\">SENEGAL<\/option>\n\t<option value=\"SRB\">SERBIA<\/option>\n\t<option value=\"SCG\">SERBIA &amp; MONTENEGRO<\/option>\n\t<option value=\"SEY\">SEYCHELLES<\/option>\n\t<option value=\"SLE\">SIERRA LEONE<\/option>\n\t<option value=\"SGP\">SINGAPORE<\/option>\n\t<option value=\"SIN\">SINGAPORE (SIN)<\/option>\n\t<option value=\"SVK\">SLOVAKIA<\/option>\n\t<option value=\"SLO\">SLOVENIA<\/option>\n\t<option value=\"SVN\">SLOVENIA (SVN)<\/option>\n\t<option value=\"SOL\">SOLOMON ISLANDS<\/option>\n\t<option value=\"SOM\">SOMALIA<\/option>\n\t<option value=\"RSA\">SOUTH AFRICA<\/option>\n\t<option value=\"SSD\">SOUTH SUDAN<\/option>\n\t<option value=\"YMD\">SOUTH YEMEN<\/option>\n\t<option value=\"URS\">SOVIET UNION<\/option>\n\t<option value=\"ESP\">SPAIN<\/option>\n\t<option value=\"SRI\">SRI LANKA<\/option>\n\t<option value=\"VIN\">ST. VINCENT<\/option>\n\t<option value=\"SUD\">SUDAN<\/option>\n\t<option value=\"SUR\">SURINAME<\/option>\n\t<option value=\"SWZ\">SWAZILAND<\/option>\n\t<option value=\"SWE\">SWEDEN<\/option>\n\t<option value=\"SUI\">SWITZERLAND<\/option>\n\t<option value=\"SYR\">SYRIA<\/option>\n\t<option value=\"PYF\">TAHITI<\/option>\n\t<option value=\"TJK\">TAJIKISTAN<\/option>\n\t<option value=\"TAN\">TANZANIA<\/option>\n\t<option value=\"THA\">THAILAND<\/option>\n\t<option value=\"TLS\">TIMOR-LESTE<\/option>\n\t<option value=\"TOG\">TOGO<\/option>\n\t<option value=\"TKL\">TOKELAU<\/option>\n\t<option value=\"TGA\">TONGA<\/option>\n\t<option value=\"TTO\">TRINIDAD AND TOBAGO<\/option>\n\t<option value=\"TUN\">TUNISIA<\/option>\n\t<option value=\"TUR\">TURKEY<\/option>\n\t<option value=\"TKM\">TURKMENISTAN<\/option>\n\t<option value=\"TUV\">TUVALU<\/option>\n\t<option value=\"UGA\">UGANDA<\/option>\n\t<option value=\"UKR\">UKRAINE<\/option>\n\t<option value=\"ULS\">ULSTER<\/option>\n\t<option value=\"UAE\">UNITED ARAB EMIRATES<\/option>\n\t<option value=\"RAU\">UNITED ARAB REPUBLIC (RAU)<\/option>\n\t<option value=\"UAR\">UNITED ARAB REPUBLIC (UAR)<\/option>\n\t<option value=\"COR\">UNITED KOREA<\/option>\n\t<option value=\"USA\">UNITED STATES OF AMERICA<\/option>\n\t<option value=\"EUA\">UNITED TEAM OF GERMANY<\/option>\n\t<option value=\"VOL\">UPPER VOLTA<\/option>\n\t<option value=\"URU\">URUGUAY<\/option>\n\t<option value=\"ISV\">US VIRGIN ISLANDS<\/option>\n\t<option value=\"UZB\">UZBEKISTAN<\/option>\n\t<option value=\"VAN\">VANUATU<\/option>\n\t<option value=\"VEN\">VENEZUELA<\/option>\n\t<option value=\"VIE\">VIETNAM<\/option>\n\t<option value=\"WAL\">WALES<\/option>\n\t<option value=\"WLF\">WALLIS &amp; FUTUNA<\/option>\n\t<option value=\"FRG\">WEST GERMANY<\/option>\n\t<option value=\"YEM\">YEMEN<\/option>\n\t<option value=\"YUG\">YUGOSLAVIA<\/option>\n\t<option value=\"ZAI\">ZAIR<\/option>\n\t<option value=\"ZAM\">ZAMBIA<\/option>\n\t<option value=\"ZIM\">ZIMBABUE<\/option>\n<\/select>\n\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][condition][0]\" value=\"=\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][join][0]\" value=\"AND\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][key][0]\" value=\"`vw_profiles`.`assoc`\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][search_type][0]\" value=\"normal\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][match][0]\" value=\"1\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][full_words_only][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][eval][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][grouped_to_previous][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][hidden][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_99_com_fabrik_99][elementid][0]\" value=\"1232\" \/>","required":"0","label":"Country","displayValue":[]},{"name":"vw_profiles___gender","id":"vw_profiles___gendervalue","filter":"<select id=\"vw_profiles___gendervalue\" name=\"fabrik___filter[list_99_com_fabrik_99][value][1]\" class=\"inputbox fabrik_filter input-small \" size=\"1\" data-filter-name=\"vw_profiles___gender\">\n\t<option value=\"\" selected=\"selected\">All<\/option>\n\t<option value=\"W\">Female<\/option>\n\t<option value=\"M\">Male<\/option>\n<\/select>\n\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][condition][1]\" value=\"=\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][join][1]\" value=\"AND\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][key][1]\" value=\"`vw_profiles`.`gender`\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][search_type][1]\" value=\"normal\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][match][1]\" value=\"1\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][full_words_only][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][eval][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][grouped_to_previous][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][hidden][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-small \" name=\"fabrik___filter[list_99_com_fabrik_99][elementid][1]\" value=\"1233\" \/>","required":"0","label":"Gender","displayValue":[]}]});
+
+
+Fabrik.filter_listform_99_com_fabrik_99.update();
+new FbCalcList('vw_profiles___age', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1234","doListUpdate":false});
+new FbCalcList('vw_profiles___current_position', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1240","doListUpdate":false});
+new FbCalcList('vw_profiles___best_position', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1241","doListUpdate":false});
+new FbCalcList('vw_profiles___progress', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1287","doListUpdate":false});
+new FbCalcList('vw_profiles___WTresults', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1242","doListUpdate":false});
+new FbCalcList('vw_profiles___Otherresults', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1246","doListUpdate":false});
+new FbCalcList('vw_profiles___Dblsresults', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1317","doListUpdate":false});
+new FbCalcList('vw_profiles___Teamresults', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1380","doListUpdate":false});
+new FbCalcList('vw_profiles___Totalmatches', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1243","doListUpdate":false});
+new FbCalcList('vw_profiles___Totalwins', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1244","doListUpdate":false});
+new FbCalcList('vw_profiles___Totalloses', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1245","doListUpdate":false});
+new FbCalcList('vw_profiles___Yearmatches', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1288","doListUpdate":false});
+new FbCalcList('vw_profiles___Yearwins', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1289","doListUpdate":false});
+new FbCalcList('vw_profiles___Yearloses', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1290","doListUpdate":false});
+new FbCalcList('vw_profiles___WTTC', {"listid":"99","listRef":"list_99_com_fabrik_99","formid":"99","elid":"1418","doListUpdate":false});
+
+})
+});
+
+
+
+			});
+			 }, 600);
+			</script>
+      </body>
+</html>

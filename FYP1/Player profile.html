@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<!-- jsn_nuru_pro 2.1.0 -->
+<html lang="" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Player profile</title>
+	<link href="/templates/jsn_nuru_pro/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/../media/coalaweb/plugins/system/gears/fonts/style.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/calendar-jos.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" title="Green" media="all" type="text/css" />
+	<link href="http://results.ittf.link/media/com_fabrik/css/fabrik.css" rel="stylesheet" type="text/css" />
+	<link href="/components/com_fabrik/libs/slimbox2/css/slimbox2.css" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/details/tmpl/bootstrap/template_css.php?c=99&amp;rowid=112019&amp;view=details&amp;rowid=112019" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/details/tmpl/bootstrap/custom_css.php?c=99&amp;rowid=112019&amp;view=details&amp;rowid=112019" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-responsive.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-extended.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-responsive-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/general.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template_pro.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/colors/green.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/styles/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_wide.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_mobile.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/modules/sociallinks/css/cw-default.css" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/components/sociallinks/themes-icon/cws-circle-fadein/cwsl_style.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	div.jsn-modulecontainer ul.menu-mainmenu ul,
+	div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-left: 199px;
+	}
+	#jsn-pos-toolbar div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-right: 199px;
+		margin-left : auto
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul,
+	div.jsn-modulecontainer ul.menu-sidemenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		right: -200px;
+	}
+	body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		left: -200px;
+		right: auto;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+		margin-left: 199px;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"cc19c3685ecfb5b6993f2b92cc069d11","system.paths":{"root":"","base":""},"joomla.jtext":{"COM_FABRIK_LOADING":"Loading...","COM_FABRIK_VALIDATING":"Validating","COM_FABRIK_SUCCESS":"Success","COM_FABRIK_NO_REPEAT_GROUP_DATA":"No data","COM_FABRIK_VALIDATION_ERROR":"Validation error","COM_FABRIK_CONFIRM_DELETE_1":"Are you sure you want to delete this record?","COM_FABRIK_FORM_SAVED":"Form saved","PLG_ELEMENT_FILEUPLOAD_MAX_UPLOAD_REACHED":"You've reached the maximum number of images that can be added to this record","PLG_ELEMENT_FILEUPLOAD_DRAG_FILES_HERE":"Drag files here","PLG_ELEMENT_FILEUPLOAD_UPLOAD_ALL_FILES":"Please ensure you have uploaded all files before submitting the form","PLG_ELEMENT_FILEUPLOAD_RESIZE":"Resize","PLG_ELEMENT_FILEUPLOAD_CROP_AND_SCALE":"Crop and scale","PLG_ELEMENT_FILEUPLOAD_PREVIEW":"Preview","PLG_ELEMENT_FILEUPLOAD_CONFIRM_SOFT_DELETE":"Do you want to remove the file reference from this record?","PLG_ELEMENT_FILEUPLOAD_CONFIRM_HARD_DELETE":"Do you want to delete the file from the server?","PLG_ELEMENT_FILEUPLOAD_FILE_TOO_LARGE_SHORT":"The file size is too large to upload","PLG_ELEMENT_DROPDOWN_ENTER_VALUE_LABEL":"Please enter a value and\/or label"}}</script>
+	<script src="/media/system/js/mootools-core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar-setup.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js" type="text/javascript"></script>
+	<script src="/templates/jsn_nuru_pro/js/jsn_template.js" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="//platform.twitter.com/widgets.js" type="text/javascript" async="async"></script>
+	<script type="text/javascript">
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]; Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]; Calendar._FD = 0; Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; Calendar._TT = {"INFO":"About the Calendar","ABOUT":"DHTML Date\/Time Selector\n(c) dynarch.com 2002-2005 \/ Author: Mihai Bazon\nFor latest version visit: http:\/\/www.dynarch.com\/projects\/calendar\/\nDistributed under GNU LGPL.  See http:\/\/gnu.org\/licenses\/lgpl.html for details.\n\nDate selection:\n- Use the \u00ab and \u00bb buttons to select year\n- Use the < and > buttons to select month\n- Hold mouse button on any of the buttons above for faster selection.","ABOUT_TIME":"\n\nTime selection:\n- Click on any of the time parts to increase it\n- or Shift-click to decrease it\n- or click and drag for faster selection.","PREV_YEAR":"Select to move to the previous year. Select and hold for a list of years.","PREV_MONTH":"Select to move to the previous month. Select and hold for a list of the months.","GO_TODAY":"Go to today","NEXT_MONTH":"Select to move to the next month. Select and hold for a list of the months.","SEL_DATE":"Select a date.","DRAG_TO_MOVE":"Drag to move.","PART_TODAY":" Today ","DAY_FIRST":"Display %s first","WEEKEND":"0,6","CLOSE":"Close","TODAY":"Today","TIME_PART":"(Shift-)Select or Drag to change the value.","DEF_DATE_FORMAT":"%Y-%m-%d","TT_DATE_FORMAT":"%a, %b %e","WK":"wk","TIME":"Time:"};
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_nuru_pro_",
+					templatePath			: "/templates/jsn_nuru_pro",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 1,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: ["mobile","wide"],
+					mobileMenuEffect		: "push-left"
+				});
+			
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+	</script>
+	<link rel="canonical" href="/index.php?option=com_fabrik&amp;amp;view=details&amp;amp;formid=99&amp;amp;rowid=112019&amp;amp;Itemid=266" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+	<!-- html5.js and respond.min.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="/plugins/system/jsntplframework/assets/3rd-party/respond/respond.min.js"></script>
+	<![endif]-->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31478852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body id="jsn-master" class="jsn-textstyle-custom jsn-color-green jsn-direction-ltr jsn-responsive jsn-mobile jsn-joomla-30  jsn-com-fabrik jsn-view-details jsn-itemid-266">
+<a name="top" id="top"></a>
+<div id="jsn-page" class="container">
+	<div id="jsn-header">
+		<div id="jsn-logo" class="pull-left">
+			<a href="/index.php" title=""><img src="/images/ittf_logo.png" alt="" id="jsn-logo-desktop" /></a>		</div>
+		<div id="jsn-headerright" class="pull-right">
+							<div id="jsn-pos-top">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><div class="cw-sl-width-100" id="cw-sl-103">
+            <div class="cw-social-mod">
+                                <div class="cw-social-mod-bookmark">
+                    
+                                            <h3 style="color:#444444" class="cw-social-mod-title-ac">
+                            Share it!                        </h3>
+                                            
+                                            
+                    <div class="cw-social-mod-icon-ac">
+
+                        <ul class="cw-social-mod-icons-cws-circle-fadein">
+                            <li>
+<a class="facebook32" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fresults.ittf.link" title="Share on Facebook"  target="_blank"></a>
+</li><li>
+<a class="googleplus-alt32" href="https://plus.google.com/share?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Google"  target="_blank"></a>
+</li><li>
+<a class="stumbleupon32"  href="https://www.stumbleupon.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Stumbleupon"  target="_blank"></a>
+</li><li>
+<a class="twitter32" href="https://twitter.com/intent/tweet?text=ITTF%20Results%2C%20Ranking%20%26%20Statistics&amp;url=https%3A%2F%2Fresults.ittf.link" title="Share on Twitter"  target="_blank"></a>
+</li><li>
+<a class="linkedin32" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on LinkedIn"  target="_blank"></a>
+</li><li>
+<a class="reddit32" href="https://reddit.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Reddit"  target="_blank"></a>
+</li><li>
+<a class="newsvine32" href="https://www.newsvine.com/_tools/seed?popoff=0&amp;u=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Newsvine"  target="_blank"></a>
+</li><li>
+<a class="gmail32" href="mailto:?subject=I&nbsp;thought&nbsp;you&nbsp;might&nbsp;like&nbsp;this!&amp;body=Website:&nbsp;ITTF&nbsp;Results&nbsp;Ranking&nbsp;and&nbsp;Statistics%0D%0ATitle:&nbsp;ITTF%20Results%2C%20Ranking%20%26%20Statistics%0D%0ALink:&nbsp;https%3A%2F%2Fresults.ittf.link" title="Recommend this page" ></a>
+</li>                        </ul>
+                    </div>
+                </div>
+            </div>
+                        </div>
+<div class="clearbreak"></div></div></div></div>
+					<div class="clearbreak"></div>
+				</div>
+						</div>
+		<div class="clearbreak"></div>
+					<div id="jsn-menu"><div id="jsn-menu-inner">
+											<div id="jsn-pos-mainmenu" >
+							<div class="_menu jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle">Menu</span>
+<ul class="menu-mainmenu">
+<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li> 
+<li  class="first"><a  href="/index.php?option=com_content&amp;view=featured&amp;Itemid=101" >
+	<i class=" "></i>
+	<span>
+		Home	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=37&amp;Itemid=154" >
+	<i class=" "></i>
+	<span>
+		Associations	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Teams		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=95&amp;Itemid=258" >
+	<i class=" "></i>
+	<span>
+		Teams results	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=107&amp;Itemid=281" >
+	<i class=" "></i>
+	<span>
+		Teams matches	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=108&amp;Itemid=282" >
+	<i class=" "></i>
+	<span>
+		Team vs Team	</span>
+</a></li></ul></li><li  class="active parent">	<a  href="/" >
+		<span>
+		Players		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=35&amp;Itemid=155" >
+	<i class=" "></i>
+	<span>
+		Players data	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=84&amp;Itemid=228" >
+	<i class=" "></i>
+	<span>
+		Players stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=36&amp;Itemid=158" >
+	<i class=" "></i>
+	<span>
+		Players matches	</span>
+</a></li><li  class="current active"><a class="current" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266" >
+	<i class=" "></i>
+	<span>
+		Players profiles	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=87&amp;Itemid=240" >
+	<i class=" "></i>
+	<span>
+		Head to Head	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=45&amp;Itemid=179" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=83&amp;Itemid=225" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Tournaments		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111" >
+	<i class=" "></i>
+	<span>
+		Tournaments list	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Tours		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=112" >
+	<i class=" "></i>
+	<span>
+		World Tour data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=4&amp;Itemid=128" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=5&amp;Itemid=129" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=6&amp;Itemid=145" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=31&amp;Itemid=146" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=7&amp;Itemid=147" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=32&amp;Itemid=148" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in U21 Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=8&amp;Itemid=151" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=33&amp;Itemid=152" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Doubles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=20&amp;Itemid=149" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=34&amp;Itemid=150" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=11&amp;Itemid=135" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=9&amp;Itemid=133" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=10&amp;Itemid=134" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=42&amp;Itemid=167" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=68&amp;Itemid=204" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		TOP 100		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=63&amp;Itemid=200" >
+	<i class=" "></i>
+	<span>
+		Singles - All Years	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=64&amp;Itemid=201" >
+	<i class=" "></i>
+	<span>
+		Singles - Per Year	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=65&amp;Itemid=202" >
+	<i class=" "></i>
+	<span>
+		U21 - All Years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=66&amp;Itemid=203" >
+	<i class=" "></i>
+	<span>
+		U21 - Per Year	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=48&amp;Itemid=183" >
+	<i class=" "></i>
+	<span>
+		World Juniors data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=50&amp;Itemid=185" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=51&amp;Itemid=186" >
+	<i class=" "></i>
+	<span>
+		Participation per tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=52&amp;Itemid=188" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=53&amp;Itemid=189" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=54&amp;Itemid=191" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=55&amp;Itemid=192" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Cadets		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=56&amp;Itemid=194" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=57&amp;Itemid=195" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=58&amp;Itemid=196" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=59&amp;Itemid=197" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=60&amp;Itemid=198" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Olympic Games		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=93&amp;Itemid=255" >
+	<i class=" "></i>
+	<span>
+		Players participation - Olympic Games	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=92&amp;Itemid=253" >
+	<i class=" "></i>
+	<span>
+		Medalists - Olympic Games	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=96&amp;Itemid=261" >
+	<i class=" "></i>
+	<span>
+		Teams results - Olympics	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Championships		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=111&amp;Itemid=286" >
+	<i class=" "></i>
+	<span>
+		Players participation - WTTC	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=112&amp;Itemid=287" >
+	<i class=" "></i>
+	<span>
+		Players participation - Stats WTTC	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=97&amp;Itemid=263" >
+	<i class=" "></i>
+	<span>
+		Teams results - WTTC	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Cups		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=98&amp;Itemid=265" >
+	<i class=" "></i>
+	<span>
+		Teams results - World Cups	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=119&amp;Itemid=293" >
+	<i class=" "></i>
+	<span>
+		Players participation - World Cups	</span>
+</a></li></ul></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		Rankings	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="parent first"><a href="javascript: void(0)">
+	<span>
+		General Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=69&amp;Itemid=206" >
+	<i class=" "></i>
+	<span>
+		Current WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=70&amp;Itemid=207" >
+	<i class=" "></i>
+	<span>
+		Current WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=43&amp;Itemid=208" >
+	<i class=" "></i>
+	<span>
+		General WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U21 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=72&amp;Itemid=211" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=73&amp;Itemid=212" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=71&amp;Itemid=210" >
+	<i class=" "></i>
+	<span>
+		U21 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U18 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=75&amp;Itemid=214" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=76&amp;Itemid=215" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=74&amp;Itemid=216" >
+	<i class=" "></i>
+	<span>
+		U18 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U15 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=78&amp;Itemid=218" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=79&amp;Itemid=219" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=77&amp;Itemid=220" >
+	<i class=" "></i>
+	<span>
+		U15 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		Doubles WR	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=88&amp;Itemid=242" >
+	<i class=" "></i>
+	<span>
+		Doubles - Pairs WR	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=90&amp;Itemid=243" >
+	<i class=" "></i>
+	<span>
+		Doubles - Individual WR	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=81&amp;Itemid=224" >
+	<i class=" "></i>
+	<span>
+		Doubles Ranking (before 2018)	</span>
+</a></li></ul></li><li  class="parent last"><a href="javascript: void(0)">
+	<span>
+		Mixed Doubles WR	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=116&amp;Itemid=291" >
+	<i class=" "></i>
+	<span>
+		Mixed Doubles - Pairs WR	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=114&amp;Itemid=290" >
+	<i class=" "></i>
+	<span>
+		Mixed Doubles - Individual WR	</span>
+</a></li></ul></li></ul></li><li  class="last"><a  href="/index.php?option=com_content&amp;view=article&amp;id=6&amp;Itemid=229" >
+	<i class=" "></i>
+	<span>
+		Help	</span>
+</a></li></ul><div class="clearbreak"></div></div></div></div>
+													</div>
+																	<span id="jsn-desktopswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','no'); return false;"></a>
+				</span>
+						<span id="jsn-mobileswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','yes'); return false;"></a>
+				</span>
+											<div class="clearbreak"></div>
+				</div></div>
+				</div>
+		<div id="jsn-body">
+		<div id="jsn-content" class="">
+			<div id="jsn-content_inner" class="row-fluid">
+										<div id="jsn-maincontent" class="span12 order1  row-fluid">
+																<div id="jsn-centercol" class="span12 order1 ">
+										<div id="jsn-centercol_inner">
+																						<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+																									<div id="jsn-mainbody">
+														<div id="system-message-container">
+	</div>
+
+														<div class="page-header">
+	<h1>Player profile</h1>
+</div>
+<div class="fabrikForm fabrikDetails" id="details_99_112019">
+		<div class="fabrikGroup" id="group120" style="">
+
+					<h3 class="legend">
+				<span>Personal Data</span>
+			</h3>
+		<div class="row-striped">
+			<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-fileupload fb_el_vw_profiles___photo_ro  span4">
+	<div class="fabrikLabel">
+		Photo	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___photo_ro"><div class="fabrikSubElementContainer">
+<img class="fabrikLightBoxImage" src="http://results.ittf.link/images/stories/photos/112019.jpg" alt="" title="" />
+</div></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-field fb_el_vw_profiles___name_ro  span4">
+	<div class="fabrikLabel">
+		Name	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___name_ro">CHEN Meng</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-databasejoin fb_el_vw_profiles___assoc_ro  mode-dropdown span4">
+	<div class="fabrikLabel">
+		Country	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___assoc_ro">CHINA<br />
+
+</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+				<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-dropdown fb_el_vw_profiles___gender_ro  span4">
+	<div class="fabrikLabel">
+		Gender	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___gender_ro">Female</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___age_ro  span4">
+	<div class="fabrikLabel">
+		Age	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___age_ro">24
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-dropdown fb_el_vw_profiles___activity_ro  span4">
+	<div class="fabrikLabel">
+		Activity	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___activity_ro">Active</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+				<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-dropdown fb_el_vw_profiles___handness_ro  span4">
+	<div class="fabrikLabel">
+		Playing hand	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___handness_ro">Right-handed</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-dropdown fb_el_vw_profiles___style_ro  span4">
+	<div class="fabrikLabel">
+		Playing style	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___style_ro">Attacker</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-dropdown fb_el_vw_profiles___grip_ro  span4">
+	<div class="fabrikLabel">
+		Grip	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___grip_ro">Shakehand</div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+	</div>
+	</div>
+
+		<div class="fabrikGroup" id="group121" style="">
+
+					<h3 class="legend">
+				<span>Player World Ranking</span>
+			</h3>
+		<div class="row-striped">
+			<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___current_position_ro  span4">
+	<div class="fabrikLabel">
+		Current WR position	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___current_position_ro">5 (10/2018)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___best_position_ro  span4">
+	<div class="fabrikLabel">
+		Best WR position (since 1/2001)	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___best_position_ro">1 (1/2018)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___progress_ro  span4">
+	<div class="fabrikLabel">
+		WR Progress	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___progress_ro"><a href="/../index.php?option=com_fabrik&view=list&listid=102&Itemid=276&resetfilters=1&vw_charts___player_id[value][]=112019" data-iscustom="1">112019
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></a></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+	</div>
+	</div>
+
+		<div class="fabrikGroup" id="group122" style="">
+
+					<h3 class="legend">
+				<span>Player Results</span>
+			</h3>
+		<div class="row-striped">
+			<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___WTresults_ro  span6">
+	<div class="fabrikLabel">
+		WT Results	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___WTresults_ro">2018 - World Tour, Korean Open, Incheon (KOR) - Seniors - Runner-Up<br/>2018 - World Tour, Qatar Open, Doha (QAT) - Seniors - SF<br/>2018 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br/>2017 - World Tour Grand Finals, Astana (KAZ) - Seniors - Winner<br/>2017 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - QF<br/>2017 - World Tour, German Open, Magdeburg (GER) - Seniors - Winner<br/>2017 - World Tour, Austrian Open, Linz (AUT) - Seniors - QF<br/>2017 - World Tour, Australian Open, Gold Coast (AUS) - Seniors - Winner<br/>2017 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br/>2017 - World Tour, Japan Open, Tokyo (JPN) - Seniors - Runner-Up<br/>2017 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br/>2017 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br/>2016 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br/>2015 - GAC Group World Tour, Swedish Open, Stockholm (SWE) - Seniors - Rnd of 16<br/>2015 - GAC Group World Tour Grand Finals, Lisbon (POR)  - Seniors - Runner-Up<br/>2015 - GAC Group World Tour, Polish Open, Warsaw (POL) - Seniors - QF<br/>2015 - GAC Group World Tour, China Open, Chengdu (CHN) - Seniors - Rnd of 16<br/>2015 - GAC Group World Tour, Japan Open, Kobe (JPN) - Seniors - Winner<br/>2015 - GAC Group World Tour, Kuwait Open, Kuwait City (KUW) - Seniors - QF<br/>2014 - World Tour, China Open, Chengdu (CHN) - Seniors - QF<br/>2014 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Runner-Up<br/>2013 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - Winner<br/>2013 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br/>2013 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br/>2013 - World Tour, Austrian Open, Wels (AUT) - Seniors - QF<br/>2012 - World Tour, Grand Finals, Hangszou (CHN) - Seniors - SF<br/>2012 - World Tour, Russian Open, Ekaterinburg (RUS) - Seniors - SF<br/>2012 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br/>2012 - World Tour, China Open, Shanghai (CHN) - Seniors - Rnd of 16<br/>2012 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br/>2012 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br/>2010 - Pro Tour, Austrian Open, Wels (AUT) - U21 - SF<br/>2010 - Pro Tour, Austrian Open, Wels (AUT) - Seniors - Rnd of 32
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Otherresults_ro  span6">
+	<div class="fabrikLabel">
+		Other Results	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Otherresults_ro">2018 - ITTF Asian Cup, Yokohama (JPN) - Seniors - Runner-Up<br/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Runner-Up
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+				<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Dblsresults_ro  span6">
+	<div class="fabrikLabel">
+		Doubles' Results	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Dblsresults_ro">2018 - World Tour, Korean Open, Incheon (KOR) - 2nd with <i>DING Ning</i><br/>2017 - ITTF Asian Championships, Wuxi (CHN) - 1st with <i>ZHU Yuling</i><br/>2017 - World Tour Grand Finals, Astana (KAZ) - 1st with <i>ZHU Yuling</i><br/>2017 - World Tour, Swedish Open, Stockholm (SWE) - 2nd with <i>ZHU Yuling</i><br/>2017 - World Tour, German Open, Magdeburg (GER) - 1/4F with <i>ZHU Yuling</i><br/>2017 - World Tour, Austrian Open, Linz (AUT) - 1/4F with <i>WANG Manyu</i><br/>2017 - World Tour, Australian Open, Gold Coast (AUS) - 1st with <i>ZHU Yuling</i><br/>2017 - World Tour, China Open, Chengdu (CHN) - 2nd with <i>ZHU Yuling</i><br/>2017 - World Tour, Qatar Open, Doha (QAT) - 1st with <i>WANG Manyu</i><br/>2017 - World Table Tennis Championships, Dusseldorf (GER) - 2nd with <i>ZHU Yuling</i>
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Teamresults_ro  span6">
+	<div class="fabrikLabel">
+		Teams' Results	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Teamresults_ro">2018 - World Team Table Tennis Championships, Halmstad (SWE) - Seniors -  Pos.: 1<br/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Team Pos.: 
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+	</div>
+	</div>
+
+		<div class="fabrikGroup" id="group123" style="">
+
+					<h3 class="legend">
+				<span>Player Stats</span>
+			</h3>
+		<div class="row-striped">
+			<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Totalmatches_ro  span4">
+	<div class="fabrikLabel">
+		Total matches	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Totalmatches_ro"><a href="/../index.php?option=com_fabrik&view=list&listid=47&Itemid=158&
+fab_matches___player_a_id[value]=112019&fab_matches___player_a_id[join]=OR&
+fab_matches___player_b_id[value]=112019&fab_matches___player_b_id[join]=OR&
+fab_matches___player_x_id[value]=112019&fab_matches___player_x_id[join]=OR&
+fab_matches___player_y_id[value]=112019&fab_matches___player_y_id[join]=OR&resetfilters=1" data-iscustom="1">389
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></a></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Totalwins_ro  span4">
+	<div class="fabrikLabel">
+		Total wins	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Totalwins_ro">334 (86%)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Totalloses_ro  span4">
+	<div class="fabrikLabel">
+		Total loses	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Totalloses_ro">55 (14%)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+				<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Yearmatches_ro  span4">
+	<div class="fabrikLabel">
+		Current year matches	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Yearmatches_ro"><a href="/../index.php?option=com_fabrik&view=list&listid=47&Itemid=158&resetfilters=1&
+fab_matches___player_a_id[value][]=112019&fab_matches___player_a_id[join][]=OR&
+fab_matches___player_b_id[value][]=112019&fab_matches___player_b_id[join][]=OR&
+fab_matches___player_b_id[grouped_to_previous][]=1&fab_matches___player_x_id[value][]=112019&fab_matches___player_x_id[join][]=OR&
+fab_matches___player_x_id[grouped_to_previous][]=1&fab_matches___player_y_id[value][]=112019&fab_matches___player_y_id[join][]=OR&
+fab_matches___player_y_id[grouped_to_previous][]=1&fab_matches___yr[value][]=2018" data-iscustom="1">36
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></a></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Yearwins_ro  span4">
+	<div class="fabrikLabel">
+		Current year wins	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Yearwins_ro">31 (86%)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___Yearloses_ro  span4">
+	<div class="fabrikLabel">
+		Current year loses	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___Yearloses_ro">5 (14%)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+		</div><!-- end row-fluid -->
+				<div class="row-fluid " ><!-- start element row -->
+	<div class=" fabrikElementContainer plg-calc fb_el_vw_profiles___WTTC_ro  span4">
+	<div class="fabrikLabel">
+		WTTC Participation	</div>
+
+	
+	<div class="fabrikElement">
+		<div class="fabrikElementReadOnly" id="vw_profiles___WTTC_ro">Number of WTTC: <a href='../index.php?option=com_fabrik&view=list&listid=111&fab_participation___player_id=112019&resetfilters=1'>6</a><br/>First WTTC: 2013 - World Table Tennis Championships, Paris (FRA)<br/>Last WTTC: 2018 - World Team Table Tennis Championships, Halmstad (SWE)
+<img src="http://results.ittf.link/media/com_fabrik/images/ajax-loader.gif" alt="Loading" style="display:none;padding-left:10px;" class="loader fabrikImg" /></div>	</div>
+
+	
+	</div><!-- end control-group -->
+
+
+</div><!-- end row-fluid for open row -->
+</div>
+	</div>
+</div>
+													</div>
+																								</div>
+																					</div>
+									</div>
+															</div>
+									</div>
+		</div>
+			</div>
+			<div id="jsn-footer">
+			<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+									<div id="jsn-pos-footer" class="span12">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>Developed by <a style="color: #004d40;" href="mailto:dmessinis@ittf.com">Dimosthenis E. Messinis <br /></a>Results raw data provided by <a style="color: #004d40;" href="mailto:zbencsik@ittf.com" rel="alternate">Zoltan Bencsik</a>, WR raw data provided by <span style="color: #004d40;">Matt Solt</span><br />Best viewed with the latest versions of the modern browsers (Firefox, Chrome, Safari, Opera)</p></div><div class="clearbreak"></div></div></div></div>
+					</div>
+									<div class="clearbreak"></div>
+			</div>
+		</div>
+		</div>
+	<a id="jsn-gotoplink" href="http://results.ittf.link/index.php#top">
+		<span>Go to top</span>
+	</a>
+	
+<script>
+            setTimeout(function(){
+            jQuery.ajaxSetup({
+  cache: true
+});
+				 jQuery.getScript( "http://results.ittf.link/media/com_fabrik/js/lib/require/require.js", function() {
+				
+define('jquery', [], function() {
+			return jQuery;
+		});
+define('moment', [], function() {
+			return moment;
+		});
+requirejs.config(
+{"baseUrl":"http:\/\/results.ittf.link\/","paths":{"fab":"media\/com_fabrik\/js\/dist","lib":"media\/com_fabrik\/js\/lib","element":"plugins\/fabrik_element","list":"plugins\/fabrik_list","form":"plugins\/fabrik_form","cron":"plugins\/fabrik_cron","viz":"plugins\/fabrik_visualization","admin":"administrator\/components\/com_fabrik\/views","adminfields":"administrator\/components\/com_fabrik\/models\/fields","jQueryUI":"media\/com_fabrik\/js\/lib\/jquery-ui\/jquery-ui","chosen":"media\/jui\/js\/chosen.jquery.min","ajaxChosen":"media\/jui\/js\/ajax-chosen.min","punycode":"media\/system\/js\/punycode"},"shim":{"fab\/fabrik":{"deps":["fab\/utils","jquery","fab\/mootools-ext","lib\/Event.mock"]},"fab\/autocomplete-bootstrap":{"deps":["fab\/fabrik"]},"jQueryUI":{"deps":["jquery"]},"fabrik\/form":{"deps":["fab\/element","lib\/form_placeholder\/Form.Placeholder"]},"element\/fileupload\/fileupload-min":{"deps":[]},"element\/field\/field-min":{"deps":[]}},"waitSeconds":30}
+);
+
+
+requirejs(['fab/chosen-loader', 'fab/fabrik', 'fab/tipsBootStrapMock'], function (Chosen, Fabrik, FloatingTips) {
+	Fabrik.liveSite = 'http://results.ittf.link/';
+	Fabrik.package = 'fabrik';
+	Fabrik.debug = false;
+	Fabrik.jLayouts = {"modal-close":"<a href=\"#\" class=\"closeFabWin\" data-role=\"close\">\n\t<span class=\"icon-cancel icon-remove-sign\"><\/span>\n<\/a>","icon-expand":"<i data-isicon=\"true\" class=\"icon-expand\" ><\/i>","icon-full-screen":"<i data-isicon=\"true\" class=\"icon-out-2 icon-fullscreen\" ><\/i>"};
+
+	Fabrik.bootstrapped = true;
+	Fabrik.tips = new FloatingTips('.fabrikTip', {"tipfx":"Fx.Transitions.linear.easeIn","duration":"500","distance":50,"fadein":false});
+	Fabrik.addEvent('fabrik.list.updaterows', function () {
+		// Reattach new tips after list redraw
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.plugin.inlineedit.editing', function () {
+		Fabrik.tips.hideAll();
+	});
+	Fabrik.addEvent('fabrik.list.inlineedit.setData', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.form.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.list.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+});
+
+
+requirejs(['http://results.ittf.link/components/com_fabrik/libs/slimbox2/js/slimbox2.js'], function () {
+
+});
+
+
+window.addEvent('fabrik.loaded', function() {
+  $$('a.fabrikWin').each(function(el, i) {
+    el.addEvent('click', function(e) {
+    	var opts = {"id":"fabwin","title":"Advanced search","loadMethod":"xhr","minimizable":false,"collapsible":true,"width":500,"height":150};
+    	e.stop();
+      opts2 = JSON.decode(el.get('rel'));
+      opts = Object.merge(opts, opts2 || {});
+      opts.contentURL = el.href;
+      if (opts.id === 'fabwin') {
+      	opts.id += i;
+      }
+      Fabrik.getWindow(opts);
+    });
+  });
+});
+requirejs(['lib/mcl/CANVAS', 'lib/mcl/CanvasItem', 'lib/mcl/Cmorph', 'lib/mcl/Layer', 'lib/mcl/LayerHash', 'lib/mcl/Thread'], function () {
+
+});
+
+
+requirejs(['fab/tipsBootStrapMock', 'fab/form', 'fab/fabrik', 'fab/window', 'lib/form_placeholder/Form.Placeholder', 'fab/form-submit', 'fab/element', 'element/fileupload/fileupload-min', 'element/field/field-min', 'fab/elementlist', 'element/databasejoin/databasejoin-min', 'element/dropdown/dropdown-min', 'element/calc/calc-min'], function (FloatingTips, FbForm, Fabrik, Window, Placeholder, FormSubmit, Element, ElementFileupload, ElementField, ElementList, ElementDatabasejoin, ElementDropdown, ElementCalc) {
+		var details_99_112019 = new FbForm(99, {"admin":false,"ajax":false,"ajaxValidation":false,"lang":false,"toggleSubmit":false,"showLoader":false,"primaryKey":"vw_profiles___player_id","error":"Some parts of your form have not been correctly filled in","pages":{"0":[120,121,122,123]},"plugins":[],"multipage_save":0,"editable":false,"print":false,"start_page":0,"inlineMessage":false,"rowid":"112019","listid":99,"images":{"alert":"icon-warning ","action_check":"http:\/\/results.ittf.link\/media\/com_fabrik\/images\/action_check.png","ajax_loader":"<i data-isicon=\"true\" class=\"icon-spinner icon-spin\" ><\/i>"},"fabrik_window_id":"","submitOnEnter":false,"hiddenGroup":{"120":false,"121":false,"122":false,"123":false},"maxRepeat":{"120":0,"121":0,"122":0,"123":0},"minRepeat":{"120":1,"121":1,"122":1,"123":1},"showMaxRepeats":{"120":false,"121":false,"122":false,"123":false},"minMaxErrMsg":{"120":"","121":"","122":"","123":""},"numRepeatEls":{"120":"","121":"","122":"","123":""},"join_group_ids":[],"group_repeats":[],"group_joins_ids":[]});
+		Fabrik.addBlock('details_99_112019', details_99_112019);
+	details_99_112019.addElements(
+{"120":[["FbFileUpload","vw_profiles___photo_ro",{"repeatCounter":0,"editable":false,"value":"\/images\/stories\/photos\/112019.jpg","label":"Photo","defaultVal":"","inRepeatGroup":false,"fullName":"vw_profiles___photo","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"id":"1239","elid":"1239","defaultImage":"","folderSelect":"0","quality":0.9,"dir":"\/home\/alfaweb\/public_html\/results\/\/images\/stories\/photos\/","ajax_upload":false,"ajax_runtime":"html5,html4","ajax_silverlight_path":"http:\/\/results.ittf.link\/plugins\/fabrik_element\/fileupload\/lib\/plupload\/js\/plupload.flash.swf","ajax_flash_path":"http:\/\/results.ittf.link\/plugins\/fabrik_element\/fileupload\/lib\/plupload\/js\/plupload.flash.swf","max_file_size":510,"device_capture":0,"ajax_chunk_size":0,"filters":[{"title":"Allowed files","extensions":"bmp,csv,doc,gif,ico,jpg,jpeg,odg,odp,ods,odt,pdf,png,ppt,swf,txt,xcf,xls,BMP,CSV,DOC,GIF,ICO,JPG,JPEG,ODG,ODP,ODS,ODT,PDF,PNG,PPT,SWF,TXT,XCF,XLS"}],"crop":false,"canvasSupport":true,"modalId":"fileupload-modal-vw_profiles___photo_ro-widget-mocha","elementName":"vw_profiles___photo","cropwidth":200,"cropheight":100,"ajax_max":4,"dragdrop":true,"previewButton":"<i data-isicon=\"true\" class=\"icon-picture \" ><\/i>","resizeButton":"<i data-isicon=\"true\" class=\"icon-expand-2 \" ><\/i>","files":{"0":{"id":"alreadyuploaded_1239_\/images\/stories\/photos\/112019.jpg","name":"112019.jpg","path":"\/images\/stories\/photos\/112019.jpg","size":31314,"type":"image","url":"http:\/\/results.ittf.link\/images\/stories\/photos\/112019.jpg","recordid":"\/images\/stories\/photos\/112019.jpg","params":null}},"winWidth":400,"winHeight":400,"elementShortName":"photo","listName":"vw_profiles","useWIP":false,"page_url":"http:\/\/results.ittf.link\/","ajaxToken":"cc19c3685ecfb5b6993f2b92cc069d11","isAdmin":false,"iconDelete":"<i data-isicon=\"true\" class=\"icon-remove\" ><\/i>","spanNames":{"1":"span1","2":"span2","3":"span3","4":"span4","5":"span5","6":"span6","7":"span7","8":"span8","9":"span9","10":"span10","11":"span11","12":"span12"}}],["FbField","vw_profiles___name_ro",{"repeatCounter":0,"editable":false,"value":"CHEN Meng","label":"Name","defaultVal":"","inRepeatGroup":false,"fullName":"vw_profiles___name","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"use_input_mask":false,"input_mask":"","geocomplete":false,"mapKey":false}],["FbDatabasejoin","vw_profiles___assoc_ro",{"repeatCounter":0,"editable":false,"value":["CHINA"],"label":"fab_countries___name","defaultVal":"","inRepeatGroup":false,"fullName":"vw_profiles___assoc","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"id":"1232","modalId":"dbjoin_popupform","key":"fab_countries___country","formid":"99","listid":"37","listRef":"_com_fabrik_37","popupform":37,"windowwidth":360,"displayType":"dropdown","show_please_select":true,"showDesc":false,"autoCompleteOpts":null,"allowadd":false,"listName":"vw_profiles","isJoin":false,"advanced":false,"observe":[],"changeEvent":"change"}],["FbDropdown","vw_profiles___gender_ro",{"repeatCounter":0,"editable":false,"value":["W"],"label":"Gender","defaultVal":[],"inRepeatGroup":false,"fullName":"vw_profiles___gender","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"allowadd":false,"data":{"M":"Male","W":"Female"},"multiple":false,"advanced":false}],["FbCalc","vw_profiles___age_ro",{"repeatCounter":0,"editable":false,"value":24,"label":"Age","defaultVal":24,"inRepeatGroup":false,"fullName":"vw_profiles___age","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___dob"],"calcOnLoad":false,"id":"1234"}],["FbDropdown","vw_profiles___activity_ro",{"repeatCounter":0,"editable":false,"value":["T"],"label":"Activity","defaultVal":[],"inRepeatGroup":false,"fullName":"vw_profiles___activity","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"allowadd":false,"data":{"T":"Active","F":"Inactive"},"multiple":false,"advanced":false}],["FbDropdown","vw_profiles___handness_ro",{"repeatCounter":0,"editable":false,"value":["RH"],"label":"Playing hand","defaultVal":[],"inRepeatGroup":false,"fullName":"vw_profiles___handness","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"allowadd":false,"data":{"RH":"Right-handed","LH":"Left-handed","-":"-"},"multiple":false,"advanced":false}],["FbDropdown","vw_profiles___style_ro",{"repeatCounter":0,"editable":false,"value":["A"],"label":"Playing style","defaultVal":[],"inRepeatGroup":false,"fullName":"vw_profiles___style","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"allowadd":false,"data":{"A":"Attacker","D":"Defender","-":"-"},"multiple":false,"advanced":false}],["FbDropdown","vw_profiles___grip_ro",{"repeatCounter":0,"editable":false,"value":["SH"],"label":"Grip","defaultVal":[],"inRepeatGroup":false,"fullName":"vw_profiles___grip","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"allowadd":false,"data":{"SH":"Shakehand","PH":"Penhold","-":"-"},"multiple":false,"advanced":false}]],"121":[["FbCalc","vw_profiles___current_position_ro",{"repeatCounter":0,"editable":false,"value":"5 (10\/2018)","label":"Current WR position","defaultVal":"5 (10\/2018)","inRepeatGroup":false,"fullName":"vw_profiles___current_position","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1240"}],["FbCalc","vw_profiles___best_position_ro",{"repeatCounter":0,"editable":false,"value":"1 (1\/2018)","label":"Best WR position (since 1\/2001)","defaultVal":"1 (1\/2018)","inRepeatGroup":false,"fullName":"vw_profiles___best_position","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1241"}],["FbCalc","vw_profiles___progress_ro",{"repeatCounter":0,"editable":false,"value":"112019","label":"WR Progress","defaultVal":"112019","inRepeatGroup":false,"fullName":"vw_profiles___progress","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1287"}]],"122":[["FbCalc","vw_profiles___WTresults_ro",{"repeatCounter":0,"editable":false,"value":"2018 - World Tour, Korean Open, Incheon (KOR) - Seniors - Runner-Up<br\/>2018 - World Tour, Qatar Open, Doha (QAT) - Seniors - SF<br\/>2018 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br\/>2017 - World Tour Grand Finals, Astana (KAZ) - Seniors - Winner<br\/>2017 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - QF<br\/>2017 - World Tour, German Open, Magdeburg (GER) - Seniors - Winner<br\/>2017 - World Tour, Austrian Open, Linz (AUT) - Seniors - QF<br\/>2017 - World Tour, Australian Open, Gold Coast (AUS) - Seniors - Winner<br\/>2017 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br\/>2017 - World Tour, Japan Open, Tokyo (JPN) - Seniors - Runner-Up<br\/>2017 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br\/>2017 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br\/>2016 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br\/>2015 - GAC Group World Tour, Swedish Open, Stockholm (SWE) - Seniors - Rnd of 16<br\/>2015 - GAC Group World Tour Grand Finals, Lisbon (POR)\u00a0 - Seniors - Runner-Up<br\/>2015 - GAC Group World Tour, Polish Open, Warsaw (POL) - Seniors - QF<br\/>2015 - GAC Group World Tour, China Open, Chengdu (CHN) - Seniors - Rnd of 16<br\/>2015 - GAC Group World Tour, Japan Open, Kobe (JPN) - Seniors - Winner<br\/>2015 - GAC Group World Tour, Kuwait Open, Kuwait City (KUW) - Seniors - QF<br\/>2014 - World Tour, China Open, Chengdu (CHN) - Seniors - QF<br\/>2014 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Runner-Up<br\/>2013 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - Winner<br\/>2013 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br\/>2013 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br\/>2013 - World Tour, Austrian Open, Wels (AUT) - Seniors - QF<br\/>2012 - World Tour, Grand Finals, Hangszou (CHN) - Seniors - SF<br\/>2012 - World Tour, Russian Open, Ekaterinburg (RUS) - Seniors - SF<br\/>2012 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br\/>2012 - World Tour, China Open, Shanghai (CHN) - Seniors - Rnd of 16<br\/>2012 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br\/>2012 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br\/>2010 - Pro Tour, Austrian Open, Wels (AUT) - U21 - SF<br\/>2010 - Pro Tour, Austrian Open, Wels (AUT) - Seniors - Rnd of 32","label":"WT Results","defaultVal":"2018 - World Tour, Korean Open, Incheon (KOR) - Seniors - Runner-Up<br\/>2018 - World Tour, Qatar Open, Doha (QAT) - Seniors - SF<br\/>2018 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br\/>2017 - World Tour Grand Finals, Astana (KAZ) - Seniors - Winner<br\/>2017 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - QF<br\/>2017 - World Tour, German Open, Magdeburg (GER) - Seniors - Winner<br\/>2017 - World Tour, Austrian Open, Linz (AUT) - Seniors - QF<br\/>2017 - World Tour, Australian Open, Gold Coast (AUS) - Seniors - Winner<br\/>2017 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br\/>2017 - World Tour, Japan Open, Tokyo (JPN) - Seniors - Runner-Up<br\/>2017 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br\/>2017 - World Tour, Hungarian Open, Budapest (HUN) - Seniors - QF<br\/>2016 - World Tour, China Open, Chengdu (CHN) - Seniors - SF<br\/>2015 - GAC Group World Tour, Swedish Open, Stockholm (SWE) - Seniors - Rnd of 16<br\/>2015 - GAC Group World Tour Grand Finals, Lisbon (POR)\u00a0 - Seniors - Runner-Up<br\/>2015 - GAC Group World Tour, Polish Open, Warsaw (POL) - Seniors - QF<br\/>2015 - GAC Group World Tour, China Open, Chengdu (CHN) - Seniors - Rnd of 16<br\/>2015 - GAC Group World Tour, Japan Open, Kobe (JPN) - Seniors - Winner<br\/>2015 - GAC Group World Tour, Kuwait Open, Kuwait City (KUW) - Seniors - QF<br\/>2014 - World Tour, China Open, Chengdu (CHN) - Seniors - QF<br\/>2014 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Runner-Up<br\/>2013 - World Tour, Swedish Open, Stockholm (SWE) - Seniors - Winner<br\/>2013 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br\/>2013 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br\/>2013 - World Tour, Austrian Open, Wels (AUT) - Seniors - QF<br\/>2012 - World Tour, Grand Finals, Hangszou (CHN) - Seniors - SF<br\/>2012 - World Tour, Russian Open, Ekaterinburg (RUS) - Seniors - SF<br\/>2012 - World Tour, Harmony China Open, Suzhou (CHN) - Seniors - Winner<br\/>2012 - World Tour, China Open, Shanghai (CHN) - Seniors - Rnd of 16<br\/>2012 - World Tour, Kuweit Open, Kuweit City (KUW) - Seniors - Rnd of 16<br\/>2012 - World Tour, Qatar Open, Doha (QAT) - Seniors - Winner<br\/>2010 - Pro Tour, Austrian Open, Wels (AUT) - U21 - SF<br\/>2010 - Pro Tour, Austrian Open, Wels (AUT) - Seniors - Rnd of 32","inRepeatGroup":false,"fullName":"vw_profiles___WTresults","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1242"}],["FbCalc","vw_profiles___Otherresults_ro",{"repeatCounter":0,"editable":false,"value":"2018 - ITTF Asian Cup, Yokohama (JPN) - Seniors - Runner-Up<br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Runner-Up","label":"Other Results","defaultVal":"2018 - ITTF Asian Cup, Yokohama (JPN) - Seniors - Runner-Up<br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Runner-Up","inRepeatGroup":false,"fullName":"vw_profiles___Otherresults","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1246"}],["FbCalc","vw_profiles___Dblsresults_ro",{"repeatCounter":0,"editable":false,"value":"2018 - World Tour, Korean Open, Incheon (KOR) - 2nd with <i>DING Ning<\/i><br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour Grand Finals, Astana (KAZ) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Swedish Open, Stockholm (SWE) - 2nd with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, German Open, Magdeburg (GER) - 1\/4F with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Austrian Open, Linz (AUT) - 1\/4F with <i>WANG Manyu<\/i><br\/>2017 - World Tour, Australian Open, Gold Coast (AUS) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, China Open, Chengdu (CHN) - 2nd with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Qatar Open, Doha (QAT) - 1st with <i>WANG Manyu<\/i><br\/>2017 - World Table Tennis Championships, Dusseldorf (GER) - 2nd with <i>ZHU Yuling<\/i>","label":"Doubles' Results","defaultVal":"2018 - World Tour, Korean Open, Incheon (KOR) - 2nd with <i>DING Ning<\/i><br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour Grand Finals, Astana (KAZ) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Swedish Open, Stockholm (SWE) - 2nd with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, German Open, Magdeburg (GER) - 1\/4F with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Austrian Open, Linz (AUT) - 1\/4F with <i>WANG Manyu<\/i><br\/>2017 - World Tour, Australian Open, Gold Coast (AUS) - 1st with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, China Open, Chengdu (CHN) - 2nd with <i>ZHU Yuling<\/i><br\/>2017 - World Tour, Qatar Open, Doha (QAT) - 1st with <i>WANG Manyu<\/i><br\/>2017 - World Table Tennis Championships, Dusseldorf (GER) - 2nd with <i>ZHU Yuling<\/i>","inRepeatGroup":false,"fullName":"vw_profiles___Dblsresults","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1317"}],["FbCalc","vw_profiles___Teamresults_ro",{"repeatCounter":0,"editable":false,"value":"2018 - World Team Table Tennis Championships, Halmstad (SWE) - Seniors -  Pos.: 1<br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Team Pos.: ","label":"Teams' Results","defaultVal":"2018 - World Team Table Tennis Championships, Halmstad (SWE) - Seniors -  Pos.: 1<br\/>2017 - ITTF Asian Championships, Wuxi (CHN) - Seniors - Team Pos.: ","inRepeatGroup":false,"fullName":"vw_profiles___Teamresults","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1380"}]],"123":[["FbCalc","vw_profiles___Totalmatches_ro",{"repeatCounter":0,"editable":false,"value":"389","label":"Total matches","defaultVal":"389","inRepeatGroup":false,"fullName":"vw_profiles___Totalmatches","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1243"}],["FbCalc","vw_profiles___Totalwins_ro",{"repeatCounter":0,"editable":false,"value":"334 (86%)","label":"Total wins","defaultVal":"334 (86%)","inRepeatGroup":false,"fullName":"vw_profiles___Totalwins","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1244"}],["FbCalc","vw_profiles___Totalloses_ro",{"repeatCounter":0,"editable":false,"value":"55 (14%)","label":"Total loses","defaultVal":"55 (14%)","inRepeatGroup":false,"fullName":"vw_profiles___Totalloses","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1245"}],["FbCalc","vw_profiles___Yearmatches_ro",{"repeatCounter":0,"editable":false,"value":"36","label":"Current year matches","defaultVal":"36","inRepeatGroup":false,"fullName":"vw_profiles___Yearmatches","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id","vw_profiles___yr"],"calcOnLoad":false,"id":"1288"}],["FbCalc","vw_profiles___Yearwins_ro",{"repeatCounter":0,"editable":false,"value":"31 (86%)","label":"Current year wins","defaultVal":"31 (86%)","inRepeatGroup":false,"fullName":"vw_profiles___Yearwins","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1289"}],["FbCalc","vw_profiles___Yearloses_ro",{"repeatCounter":0,"editable":false,"value":"5 (14%)","label":"Current year loses","defaultVal":"5 (14%)","inRepeatGroup":false,"fullName":"vw_profiles___Yearloses","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id"],"calcOnLoad":false,"id":"1290"}],["FbCalc","vw_profiles___WTTC_ro",{"repeatCounter":0,"editable":false,"value":"Number of WTTC: <a href='..\/index.php?option=com_fabrik&view=list&listid=111&fab_participation___player_id=112019&resetfilters=1'>6<\/a><br\/>First WTTC: 2013 - World Table Tennis Championships, Paris (FRA)<br\/>Last WTTC: 2018 - World Team Table Tennis Championships, Halmstad (SWE)","label":"WTTC Participation","defaultVal":"Number of WTTC: <a href='..\/index.php?option=com_fabrik&view=list&listid=111&fab_participation___player_id=112019&resetfilters=1'>6<\/a><br\/>First WTTC: 2013 - World Table Tennis Championships, Paris (FRA)<br\/>Last WTTC: 2018 - World Team Table Tennis Championships, Halmstad (SWE)","inRepeatGroup":false,"fullName":"vw_profiles___WTTC","watchElements":[],"canRepeat":false,"isGroupJoin":false,"mustValidate":false,"validations":false,"joinid":0,"ajax":false,"observe":["vw_profiles___player_id","rowid"],"calcOnLoad":false,"id":"1418"}]]}
+	);
+
+
+
+	new Form.Placeholder('.fabrikForm input');
+	function submit_form() {
+	return false;
+}
+function submitbutton(button) {
+	if (button=="cancel") {
+		document.location = '/index.php?option=com_fabrik&amp;task=viewTable&amp;cid=99&amp;Itemid=266';
+	}
+	if (button == "cancelShowForm") {
+		return false;
+	}
+}
+});
+
+
+
+			});
+			 }, 600);
+			</script>
+      </body>
+</html>

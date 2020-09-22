@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<!-- jsn_nuru_pro 2.1.0 -->
+<html lang="" dir="ltr">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Tournaments list</title>
+	<link href="/templates/jsn_nuru_pro/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+	<link href="/../media/coalaweb/plugins/system/gears/fonts/style.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/calendar-jos.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" title="Green" media="all" type="text/css" />
+	<link href="http://results.ittf.link/media/com_fabrik/css/fabrik.css" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/list/tmpl/bootstrap/template_css.php?c=1_com_fabrik_1&amp;buttoncount=0&amp;format=html" rel="stylesheet" type="text/css" />
+	<link href="http://results.ittf.link/components/com_fabrik/views/list/tmpl/bootstrap/custom_css.php?c=1_com_fabrik_1&amp;buttoncount=0&amp;format=html" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-responsive.min.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/jui/css/bootstrap-extended.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/plugins/system/jsntplframework/assets/3rd-party/bootstrap/css/bootstrap-responsive-frontend.min.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/system.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/system/css/general.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/template_pro.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/colors/green.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/styles/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_wide.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/layouts/jsn_mobile.css" rel="stylesheet" type="text/css" />
+	<link href="/templates/jsn_nuru_pro/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="/media/system/css/modal.css?1f1847d95e484f6466f926d485a848ef" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/modules/sociallinks/css/cw-default.css" rel="stylesheet" type="text/css" />
+	<link href="/media/coalawebsociallinks/components/sociallinks/themes-icon/cws-circle-fadein/cwsl_style.css" rel="stylesheet" type="text/css" />
+	<style type="text/css">
+	div.jsn-modulecontainer ul.menu-mainmenu ul,
+	div.jsn-modulecontainer ul.menu-mainmenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-left: 199px;
+	}
+	#jsn-pos-toolbar div.jsn-modulecontainer ul.menu-mainmenu ul ul {
+		margin-right: 199px;
+		margin-left : auto
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul,
+	div.jsn-modulecontainer ul.menu-sidemenu ul li {
+		width: 200px;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		right: -200px;
+	}
+	body.jsn-direction-rtl div.jsn-modulecontainer ul.menu-sidemenu li ul {
+		left: -200px;
+		right: auto;
+	}
+	div.jsn-modulecontainer ul.menu-sidemenu ul ul {
+		margin-left: 199px;
+	}
+	</style>
+	<script type="application/json" class="joomla-script-options new">{"csrf.token":"936e5c564d19a42d736f0255c66a7a52","system.paths":{"root":"","base":""},"joomla.jtext":{"COM_FABRIK_LOADING":"Loading...","COM_FABRIK_PREV":"Prev","COM_FABRIK_SELECT_ROWS_FOR_DELETION":"Select some rows for deletion","JYES":"Yes","JNO":"No","COM_FABRIK_SELECT_COLUMNS_TO_EXPORT":"Select columns to export","COM_FABRIK_INCLUDE_FILTERS":"Include filters:","COM_FABRIK_INCLUDE_DATA":"Include data:","COM_FABRIK_INCLUDE_RAW_DATA":"Include raw data:","COM_FABRIK_INCLUDE_CALCULATIONS":"Include calculations","COM_FABRIK_EXPORT":"Export","COM_FABRIK_START":"Start","COM_FABRIK_NEXT":"Next","COM_FABRIK_END":"End","COM_FABRIK_PAGE":"COM_FABRIK_PAGE","COM_FABRIK_OF":"COM_FABRIK_OF","COM_FABRIK_RECORDS":"records","COM_FABRIK_SAVING_TO":"saving to","COM_FABRIK_CONFIRM_DROP":"Do you really want to delete all records and reset this tables key to 0?","COM_FABRIK_CONFIRM_DELETE_1":"Are you sure you want to delete this record?","COM_FABRIK_NO_RECORDS":"No records found","COM_FABRIK_CSV_COMPLETE":"CSV export complete","COM_FABRIK_CSV_DOWNLOAD_HERE":"Download here","COM_FABRIK_CONFIRM_DELETE":"Are you sure you want to delete %s records?","COM_FABRIK_CSV_DOWNLOADING":"CSV file downloading","COM_FABRIK_FILE_TYPE":"File type","COM_FABRIK_ADVANCED_SEARCH":"Advanced search","COM_FABRIK_FORM_FIELDS":"Form fields","COM_FABRIK_VIEW":"View","COM_FABRIK_LIST_SHORTCUTS_ADD":"a","COM_FABRIK_LIST_SHORTCUTS_EDIT":"e","COM_FABRIK_LIST_SHORTCUTS_DELETE":"d","COM_FABRIK_LIST_SHORTCUTS_FILTER":"f"}}</script>
+	<script src="/media/system/js/mootools-core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/core.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/mootools-more.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-noconflict.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/jquery-migrate.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/jui/js/bootstrap.min.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/media/system/js/calendar-setup.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/noconflict.js" type="text/javascript"></script>
+	<script src="/plugins/system/jsntplframework/assets/joomlashine/js/utils.js" type="text/javascript"></script>
+	<script src="/templates/jsn_nuru_pro/js/jsn_template.js" type="text/javascript"></script>
+	<script src="/media/system/js/modal.js?1f1847d95e484f6466f926d485a848ef" type="text/javascript"></script>
+	<script src="//platform.twitter.com/widgets.js" type="text/javascript" async="async"></script>
+	<script type="text/javascript">
+Calendar._DN = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]; Calendar._SDN = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat","Sun"]; Calendar._FD = 0; Calendar._MN = ["January","February","March","April","May","June","July","August","September","October","November","December"]; Calendar._SMN = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]; Calendar._TT = {"INFO":"About the Calendar","ABOUT":"DHTML Date\/Time Selector\n(c) dynarch.com 2002-2005 \/ Author: Mihai Bazon\nFor latest version visit: http:\/\/www.dynarch.com\/projects\/calendar\/\nDistributed under GNU LGPL.  See http:\/\/gnu.org\/licenses\/lgpl.html for details.\n\nDate selection:\n- Use the \u00ab and \u00bb buttons to select year\n- Use the < and > buttons to select month\n- Hold mouse button on any of the buttons above for faster selection.","ABOUT_TIME":"\n\nTime selection:\n- Click on any of the time parts to increase it\n- or Shift-click to decrease it\n- or click and drag for faster selection.","PREV_YEAR":"Select to move to the previous year. Select and hold for a list of years.","PREV_MONTH":"Select to move to the previous month. Select and hold for a list of the months.","GO_TODAY":"Go to today","NEXT_MONTH":"Select to move to the next month. Select and hold for a list of the months.","SEL_DATE":"Select a date.","DRAG_TO_MOVE":"Drag to move.","PART_TODAY":" Today ","DAY_FIRST":"Display %s first","WEEKEND":"0,6","CLOSE":"Close","TODAY":"Today","TIME_PART":"(Shift-)Select or Drag to change the value.","DEF_DATE_FORMAT":"%Y-%m-%d","TT_DATE_FORMAT":"%a, %b %e","WK":"wk","TIME":"Time:"};
+				JSNTemplate.initTemplate({
+					templatePrefix			: "jsn_nuru_pro_",
+					templatePath			: "/templates/jsn_nuru_pro",
+					enableRTL				: 0,
+					enableGotopLink			: 1,
+					enableMobile			: 1,
+					enableMobileMenuSticky	: 1,
+					enableDesktopMenuSticky	: 0,
+					responsiveLayout		: ["mobile","wide"],
+					mobileMenuEffect		: "push-left"
+				});
+			
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			SqueezeBox.assign($('a.modal').get(), {
+				parse: 'rel'
+			});
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+		
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{	
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+					
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+		
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+		
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+	</script>
+	<link rel="canonical" href="/index.php?option=com_fabrik&amp;amp;view=list&amp;amp;listid=1&amp;amp;Itemid=111" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+	<!-- html5.js and respond.min.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="/plugins/system/jsntplframework/assets/3rd-party/respond/respond.min.js"></script>
+	<![endif]-->
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-31478852-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+<body id="jsn-master" class="jsn-textstyle-custom jsn-color-green jsn-direction-ltr jsn-responsive jsn-mobile jsn-joomla-30  jsn-com-fabrik jsn-view-list jsn-itemid-111">
+<a name="top" id="top"></a>
+<div id="jsn-page" class="container">
+	<div id="jsn-header">
+		<div id="jsn-logo" class="pull-left">
+			<a href="/index.php" title=""><img src="/images/ittf_logo.png" alt="" id="jsn-logo-desktop" /></a>		</div>
+		<div id="jsn-headerright" class="pull-right">
+							<div id="jsn-pos-top">
+					<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><div class="cw-sl-width-100" id="cw-sl-103">
+            <div class="cw-social-mod">
+                                <div class="cw-social-mod-bookmark">
+                    
+                                            <h3 style="color:#444444" class="cw-social-mod-title-ac">
+                            Share it!                        </h3>
+                                            
+                                            
+                    <div class="cw-social-mod-icon-ac">
+
+                        <ul class="cw-social-mod-icons-cws-circle-fadein">
+                            <li>
+<a class="facebook32" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fresults.ittf.link" title="Share on Facebook"  target="_blank"></a>
+</li><li>
+<a class="googleplus-alt32" href="https://plus.google.com/share?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Google"  target="_blank"></a>
+</li><li>
+<a class="stumbleupon32"  href="https://www.stumbleupon.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Stumbleupon"  target="_blank"></a>
+</li><li>
+<a class="twitter32" href="https://twitter.com/intent/tweet?text=ITTF%20Results%2C%20Ranking%20%26%20Statistics&amp;url=https%3A%2F%2Fresults.ittf.link" title="Share on Twitter"  target="_blank"></a>
+</li><li>
+<a class="linkedin32" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on LinkedIn"  target="_blank"></a>
+</li><li>
+<a class="reddit32" href="https://reddit.com/submit?url=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Reddit"  target="_blank"></a>
+</li><li>
+<a class="newsvine32" href="https://www.newsvine.com/_tools/seed?popoff=0&amp;u=https%3A%2F%2Fresults.ittf.link&amp;title=ITTF%20Results%2C%20Ranking%20%26%20Statistics" title="Share on Newsvine"  target="_blank"></a>
+</li><li>
+<a class="gmail32" href="mailto:?subject=I&nbsp;thought&nbsp;you&nbsp;might&nbsp;like&nbsp;this!&amp;body=Website:&nbsp;ITTF&nbsp;Results&nbsp;Ranking&nbsp;and&nbsp;Statistics%0D%0ATitle:&nbsp;ITTF%20Results%2C%20Ranking%20%26%20Statistics%0D%0ALink:&nbsp;https%3A%2F%2Fresults.ittf.link" title="Recommend this page" ></a>
+</li>                        </ul>
+                    </div>
+                </div>
+            </div>
+                        </div>
+<div class="clearbreak"></div></div></div></div>
+					<div class="clearbreak"></div>
+				</div>
+						</div>
+		<div class="clearbreak"></div>
+					<div id="jsn-menu"><div id="jsn-menu-inner">
+											<div id="jsn-pos-mainmenu" >
+							<div class="_menu jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent"><span id="jsn-menu-toggle-parent" class="jsn-menu-toggle">Menu</span>
+<ul class="menu-mainmenu">
+<li class="jsn-menu-mobile-control"><span class="close-menu"><i class="fa fa-times"></i></span></li> 
+<li  class="first"><a  href="/index.php?option=com_content&amp;view=featured&amp;Itemid=101" >
+	<i class=" "></i>
+	<span>
+		Home	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=37&amp;Itemid=154" >
+	<i class=" "></i>
+	<span>
+		Associations	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Teams		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=95&amp;Itemid=258" >
+	<i class=" "></i>
+	<span>
+		Teams results	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=107&amp;Itemid=281" >
+	<i class=" "></i>
+	<span>
+		Teams matches	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=108&amp;Itemid=282" >
+	<i class=" "></i>
+	<span>
+		Team vs Team	</span>
+</a></li></ul></li><li  class="parent">	<a  href="/" >
+		<span>
+		Players		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=35&amp;Itemid=155" >
+	<i class=" "></i>
+	<span>
+		Players data	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=84&amp;Itemid=228" >
+	<i class=" "></i>
+	<span>
+		Players stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=36&amp;Itemid=158" >
+	<i class=" "></i>
+	<span>
+		Players matches	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=99&amp;Itemid=266" >
+	<i class=" "></i>
+	<span>
+		Players profiles	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=87&amp;Itemid=240" >
+	<i class=" "></i>
+	<span>
+		Head to Head	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=45&amp;Itemid=179" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=83&amp;Itemid=225" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li></ul></li><li  class="active parent">	<a  href="#" >
+		<span>
+		Tournaments		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="current active first"><a class="current" href="/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111" >
+	<i class=" "></i>
+	<span>
+		Tournaments list	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Tours		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=3&amp;Itemid=112" >
+	<i class=" "></i>
+	<span>
+		World Tour data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=4&amp;Itemid=128" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=5&amp;Itemid=129" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=6&amp;Itemid=145" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=31&amp;Itemid=146" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=7&amp;Itemid=147" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=32&amp;Itemid=148" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in U21 Singles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=8&amp;Itemid=151" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=33&amp;Itemid=152" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Doubles		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=20&amp;Itemid=149" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=34&amp;Itemid=150" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=11&amp;Itemid=135" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=9&amp;Itemid=133" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=10&amp;Itemid=134" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=42&amp;Itemid=167" >
+	<i class=" "></i>
+	<span>
+		Entry list - Overall Stats	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=68&amp;Itemid=204" >
+	<i class=" "></i>
+	<span>
+		Entry list - Yearly Stats	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		TOP 100		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=63&amp;Itemid=200" >
+	<i class=" "></i>
+	<span>
+		Singles - All Years	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=64&amp;Itemid=201" >
+	<i class=" "></i>
+	<span>
+		Singles - Per Year	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=65&amp;Itemid=202" >
+	<i class=" "></i>
+	<span>
+		U21 - All Years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=66&amp;Itemid=203" >
+	<i class=" "></i>
+	<span>
+		U21 - Per Year	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=48&amp;Itemid=183" >
+	<i class=" "></i>
+	<span>
+		World Juniors data	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Participation Statistics		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=50&amp;Itemid=185" >
+	<i class=" "></i>
+	<span>
+		Participation per Tournament	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=51&amp;Itemid=186" >
+	<i class=" "></i>
+	<span>
+		Participation per tournament per Country	</span>
+</a></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=52&amp;Itemid=188" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=53&amp;Itemid=189" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Juniors		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=54&amp;Itemid=191" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=55&amp;Itemid=192" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Players participation in Cadets		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=56&amp;Itemid=194" >
+	<i class=" "></i>
+	<span>
+		All years	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=57&amp;Itemid=195" >
+	<i class=" "></i>
+	<span>
+		Per year	</span>
+</a></li></ul></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=58&amp;Itemid=196" >
+	<i class=" "></i>
+	<span>
+		Players participation per Continent	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=59&amp;Itemid=197" >
+	<i class=" "></i>
+	<span>
+		Participation per Country	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=60&amp;Itemid=198" >
+	<i class=" "></i>
+	<span>
+		Countries participation per Continent	</span>
+</a></li></ul></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		Olympic Games		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=93&amp;Itemid=255" >
+	<i class=" "></i>
+	<span>
+		Players participation - Olympic Games	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=92&amp;Itemid=253" >
+	<i class=" "></i>
+	<span>
+		Medalists - Olympic Games	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=96&amp;Itemid=261" >
+	<i class=" "></i>
+	<span>
+		Teams results - Olympics	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Championships		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=111&amp;Itemid=286" >
+	<i class=" "></i>
+	<span>
+		Players participation - WTTC	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=112&amp;Itemid=287" >
+	<i class=" "></i>
+	<span>
+		Players participation - Stats WTTC	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=97&amp;Itemid=263" >
+	<i class=" "></i>
+	<span>
+		Teams results - WTTC	</span>
+</a></li></ul></li><li  class="parent">	<a  href="#" >
+		<span>
+		World Cups		</span>
+	</a>
+	<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=98&amp;Itemid=265" >
+	<i class=" "></i>
+	<span>
+		Teams results - World Cups	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=119&amp;Itemid=293" >
+	<i class=" "></i>
+	<span>
+		Players participation - World Cups	</span>
+</a></li></ul></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		Rankings	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="parent first"><a href="javascript: void(0)">
+	<span>
+		General Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=69&amp;Itemid=206" >
+	<i class=" "></i>
+	<span>
+		Current WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=70&amp;Itemid=207" >
+	<i class=" "></i>
+	<span>
+		Current WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=43&amp;Itemid=208" >
+	<i class=" "></i>
+	<span>
+		General WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U21 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=72&amp;Itemid=211" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=73&amp;Itemid=212" >
+	<i class=" "></i>
+	<span>
+		Current U21 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=71&amp;Itemid=210" >
+	<i class=" "></i>
+	<span>
+		U21 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U18 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=75&amp;Itemid=214" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=76&amp;Itemid=215" >
+	<i class=" "></i>
+	<span>
+		Current U18 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=74&amp;Itemid=216" >
+	<i class=" "></i>
+	<span>
+		U18 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		U15 Ranking List	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=78&amp;Itemid=218" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Men	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=79&amp;Itemid=219" >
+	<i class=" "></i>
+	<span>
+		Current U15 WR - Women	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=77&amp;Itemid=220" >
+	<i class=" "></i>
+	<span>
+		U15 WR - Archive	</span>
+</a></li></ul></li><li  class="parent"><a href="javascript: void(0)">
+	<span>
+		Doubles WR	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=88&amp;Itemid=242" >
+	<i class=" "></i>
+	<span>
+		Doubles - Pairs WR	</span>
+</a></li><li  class=""><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=90&amp;Itemid=243" >
+	<i class=" "></i>
+	<span>
+		Doubles - Individual WR	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=81&amp;Itemid=224" >
+	<i class=" "></i>
+	<span>
+		Doubles Ranking (before 2018)	</span>
+</a></li></ul></li><li  class="parent last"><a href="javascript: void(0)">
+	<span>
+		Mixed Doubles WR	</span>
+  </a>
+<span class="jsn-menu-toggle"></span><ul><li  class="first"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=116&amp;Itemid=291" >
+	<i class=" "></i>
+	<span>
+		Mixed Doubles - Pairs WR	</span>
+</a></li><li  class="last"><a  href="/index.php?option=com_fabrik&amp;view=list&amp;listid=114&amp;Itemid=290" >
+	<i class=" "></i>
+	<span>
+		Mixed Doubles - Individual WR	</span>
+</a></li></ul></li></ul></li><li  class="last"><a  href="/index.php?option=com_content&amp;view=article&amp;id=6&amp;Itemid=229" >
+	<i class=" "></i>
+	<span>
+		Help	</span>
+</a></li></ul><div class="clearbreak"></div></div></div></div>
+													</div>
+																	<span id="jsn-desktopswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','no'); return false;"></a>
+				</span>
+						<span id="jsn-mobileswitch">
+					<a href="#" onclick="javascript: JSNUtils.setTemplateAttribute('jsn_nuru_pro_','mobile','yes'); return false;"></a>
+				</span>
+											<div class="clearbreak"></div>
+				</div></div>
+				</div>
+		<div id="jsn-body">
+		<div id="jsn-content" class="">
+			<div id="jsn-content_inner" class="row-fluid">
+										<div id="jsn-maincontent" class="span12 order1  row-fluid">
+																<div id="jsn-centercol" class="span12 order1 ">
+										<div id="jsn-centercol_inner">
+																						<div id="jsn-mainbody-content" class=" jsn-hasmainbody">
+																									<div id="jsn-mainbody">
+														<div id="system-message-container">
+	</div>
+
+														<div class="page-header">
+		<h1>Tournaments</h1>
+	</div>
+<p>List of the recorded Tournaments.</p><form class="fabrikForm form-search" action="/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111&amp;limit1=100&amp;resetfilters=0&amp;clearordering=0&amp;clearfilters=0" method="post" id="listform_1_com_fabrik_1" name="fabrikList">
+
+<div class="fabrikButtonsContainer row-fluid">
+<ul class="nav nav-pills  pull-left">
+
+</ul>
+<ul class="nav pull-right">
+	<li>
+	<div class="input-append">
+		</div>
+	</li>
+</ul>
+</div>
+<div class="fabrikFilterContainer" >
+		<div class="row-fluid">
+				<div class="span6">
+						<table class="filtertable table table-striped">
+				<thead>
+				<tr class="fabrik___heading">
+					<th>Search:</th>
+					<th style="text-align:right">
+													<a class="clearFilters" href="#">
+								<i data-isicon="true" class="icon-refresh" ></i> Clear filters							</a>
+											</th>
+				</tr>
+				</thead>
+				<tfoot>
+				<tr>
+					<td colspan="2"></td>
+				</tr>
+				</tfoot>
+												<tr data-filter-row="fab_tournaments___code"
+										class="fabrik_row oddRow1">
+									<td>Year</td>
+									<td><select id="fab_tournaments___codevalue" name="fabrik___filter[list_1_com_fabrik_1][value][0]" class="inputbox fabrik_filter input-mini " size="1" data-filter-name="fab_tournaments___code">
+	<option value="" selected="selected">All</option>
+	<option value="1926">1926</option>
+	<option value="1928">1928</option>
+	<option value="1929">1929</option>
+	<option value="1930">1930</option>
+	<option value="1931">1931</option>
+	<option value="1932">1932</option>
+	<option value="1933">1933</option>
+	<option value="1934">1934</option>
+	<option value="1935">1935</option>
+	<option value="1936">1936</option>
+	<option value="1937">1937</option>
+	<option value="1938">1938</option>
+	<option value="1939">1939</option>
+	<option value="1947">1947</option>
+	<option value="1948">1948</option>
+	<option value="1949">1949</option>
+	<option value="1950">1950</option>
+	<option value="1951">1951</option>
+	<option value="1952">1952</option>
+	<option value="1953">1953</option>
+	<option value="1954">1954</option>
+	<option value="1955">1955</option>
+	<option value="1956">1956</option>
+	<option value="1957">1957</option>
+	<option value="1958">1958</option>
+	<option value="1959">1959</option>
+	<option value="1960">1960</option>
+	<option value="1961">1961</option>
+	<option value="1962">1962</option>
+	<option value="1963">1963</option>
+	<option value="1964">1964</option>
+	<option value="1965">1965</option>
+	<option value="1966">1966</option>
+	<option value="1967">1967</option>
+	<option value="1968">1968</option>
+	<option value="1969">1969</option>
+	<option value="1970">1970</option>
+	<option value="1971">1971</option>
+	<option value="1972">1972</option>
+	<option value="1973">1973</option>
+	<option value="1974">1974</option>
+	<option value="1975">1975</option>
+	<option value="1976">1976</option>
+	<option value="1977">1977</option>
+	<option value="1978">1978</option>
+	<option value="1979">1979</option>
+	<option value="1980">1980</option>
+	<option value="1981">1981</option>
+	<option value="1982">1982</option>
+	<option value="1983">1983</option>
+	<option value="1984">1984</option>
+	<option value="1985">1985</option>
+	<option value="1986">1986</option>
+	<option value="1987">1987</option>
+	<option value="1988">1988</option>
+	<option value="1989">1989</option>
+	<option value="1990">1990</option>
+	<option value="1991">1991</option>
+	<option value="1992">1992</option>
+	<option value="1993">1993</option>
+	<option value="1994">1994</option>
+	<option value="1995">1995</option>
+	<option value="1996">1996</option>
+	<option value="1997">1997</option>
+	<option value="1998">1998</option>
+	<option value="1999">1999</option>
+	<option value="2000">2000</option>
+	<option value="2001">2001</option>
+	<option value="2002">2002</option>
+	<option value="2003">2003</option>
+	<option value="2004">2004</option>
+	<option value="2005">2005</option>
+	<option value="2006">2006</option>
+	<option value="2007">2007</option>
+	<option value="2008">2008</option>
+	<option value="2009">2009</option>
+	<option value="2010">2010</option>
+	<option value="2011">2011</option>
+	<option value="2012">2012</option>
+	<option value="2013">2013</option>
+	<option value="2014">2014</option>
+	<option value="2015">2015</option>
+	<option value="2016">2016</option>
+	<option value="2017">2017</option>
+	<option value="2018">2018</option>
+	<option value="2019">2019</option>
+	<option value="2020">2020</option>
+</select>
+
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][condition][0]" value="=" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][join][0]" value="AND" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][key][0]" value="`fab_tournaments`.`code`" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][search_type][0]" value="normal" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][match][0]" value="1" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][full_words_only][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][eval][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][hidden][0]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][elementid][0]" value="4" /></td>
+								</tr>
+																<tr data-filter-row="fab_tournaments___type"
+										class="fabrik_row oddRow0">
+									<td>Type</td>
+									<td><select id="fab_tournaments___typevalue" name="fabrik___filter[list_1_com_fabrik_1][value][1]" class="inputbox fabrik_filter input-medium " size="1" data-filter-name="fab_tournaments___type">
+	<option value="" selected="selected">All</option>
+	<option value="13">Challenge</option>
+	<option value="3">Continental</option>
+	<option value="11">Multi sport events</option>
+	<option value="5">Olympic Games</option>
+	<option value="9">Other events</option>
+	<option value="10">WJTTC</option>
+	<option value="12">World Cup</option>
+	<option value="2">World Junior Circuit</option>
+	<option value="1">World Tour / Pro Tour</option>
+	<option value="4">WTTC</option>
+</select>
+
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][condition][1]" value="=" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][join][1]" value="AND" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][key][1]" value="`fab_tournaments`.`type`" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][search_type][1]" value="normal" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][match][1]" value="1" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][full_words_only][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][eval][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][hidden][1]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-medium " name="fabrik___filter[list_1_com_fabrik_1][elementid][1]" value="83" /></td>
+								</tr>
+																<tr data-filter-row="fab_tournaments___organizer"
+										class="fabrik_row oddRow1">
+									<td>Organizer</td>
+									<td><select id="fab_tournaments___organizervalue" name="fabrik___filter[list_1_com_fabrik_1][value][2]" class="inputbox fabrik_filter input-mini " size="1" data-filter-name="fab_tournaments___organizer">
+	<option value="" selected="selected">All</option>
+	<option value="ALG">ALG</option>
+	<option value="ARG">ARG</option>
+	<option value="AUS">AUS</option>
+	<option value="AUT">AUT</option>
+	<option value="AZE">AZE</option>
+	<option value="BAN">BAN</option>
+	<option value="BAR">BAR</option>
+	<option value="BEL">BEL</option>
+	<option value="BEN">BEN</option>
+	<option value="BIH">BIH</option>
+	<option value="BLR">BLR</option>
+	<option value="BOL">BOL</option>
+	<option value="BOT">BOT</option>
+	<option value="BRA">BRA</option>
+	<option value="BRN">BRN</option>
+	<option value="BRU">BRU</option>
+	<option value="BUL">BUL</option>
+	<option value="CAM">CAM</option>
+	<option value="CAN">CAN</option>
+	<option value="CGO">CGO</option>
+	<option value="CHI">CHI</option>
+	<option value="CHN">CHN</option>
+	<option value="CIV">CIV</option>
+	<option value="CMR">CMR</option>
+	<option value="COK">COK</option>
+	<option value="COL">COL</option>
+	<option value="CRC">CRC</option>
+	<option value="CRO">CRO</option>
+	<option value="CUB">CUB</option>
+	<option value="CZE">CZE</option>
+	<option value="DEN">DEN</option>
+	<option value="DOM">DOM</option>
+	<option value="ECU">ECU</option>
+	<option value="EGY">EGY</option>
+	<option value="ENG">ENG</option>
+	<option value="ESA">ESA</option>
+	<option value="ESP">ESP</option>
+	<option value="EST">EST</option>
+	<option value="ETH">ETH</option>
+	<option value="FIJ">FIJ</option>
+	<option value="FIN">FIN</option>
+	<option value="FRA">FRA</option>
+	<option value="FRG">FRG</option>
+	<option value="GER">GER</option>
+	<option value="GGY">GGY</option>
+	<option value="GHA">GHA</option>
+	<option value="GRE">GRE</option>
+	<option value="GUA">GUA</option>
+	<option value="GUM">GUM</option>
+	<option value="GUY">GUY</option>
+	<option value="HKG">HKG</option>
+	<option value="HRV">HRV</option>
+	<option value="HUN">HUN</option>
+	<option value="IMN">IMN</option>
+	<option value="INA">INA</option>
+	<option value="IND">IND</option>
+	<option value="IRI">IRI</option>
+	<option value="IRQ">IRQ</option>
+	<option value="ISL">ISL</option>
+	<option value="ITA">ITA</option>
+	<option value="JOR">JOR</option>
+	<option value="JPN">JPN</option>
+	<option value="KAZ">KAZ</option>
+	<option value="KEN">KEN</option>
+	<option value="KIR">KIR</option>
+	<option value="KOR">KOR</option>
+	<option value="KSA">KSA</option>
+	<option value="KUW">KUW</option>
+	<option value="LAT">LAT</option>
+	<option value="LBA">LBA</option>
+	<option value="LCA">LCA</option>
+	<option value="LIB">LIB</option>
+	<option value="LIE">LIE</option>
+	<option value="LTU">LTU</option>
+	<option value="LUX">LUX</option>
+	<option value="MAC">MAC</option>
+	<option value="MAR">MAR</option>
+	<option value="MAS">MAS</option>
+	<option value="MDA">MDA</option>
+	<option value="MEX">MEX</option>
+	<option value="MGL">MGL</option>
+	<option value="MLT">MLT</option>
+	<option value="MOZ">MOZ</option>
+	<option value="MRI">MRI</option>
+	<option value="MYA">MYA</option>
+	<option value="NCA">NCA</option>
+	<option value="NCL">NCL</option>
+	<option value="NED">NED</option>
+	<option value="NGR">NGR</option>
+	<option value="NOR">NOR</option>
+	<option value="NZL">NZL</option>
+	<option value="OMA">OMA</option>
+	<option value="PAK">PAK</option>
+	<option value="PAN">PAN</option>
+	<option value="PAR">PAR</option>
+	<option value="PER">PER</option>
+	<option value="PHI">PHI</option>
+	<option value="PLW">PLW</option>
+	<option value="PNG">PNG</option>
+	<option value="POL">POL</option>
+	<option value="POR">POR</option>
+	<option value="PRK">PRK</option>
+	<option value="PUR">PUR</option>
+	<option value="PYF">PYF</option>
+	<option value="QAT">QAT</option>
+	<option value="ROU">ROU</option>
+	<option value="RSA">RSA</option>
+	<option value="RUS">RUS</option>
+	<option value="SCO">SCO</option>
+	<option value="SEN">SEN</option>
+	<option value="SGP">SGP</option>
+	<option value="SIN">SIN</option>
+	<option value="SLO">SLO</option>
+	<option value="SMR">SMR</option>
+	<option value="SRB">SRB</option>
+	<option value="SUD">SUD</option>
+	<option value="SUI">SUI</option>
+	<option value="SVK">SVK</option>
+	<option value="SVN">SVN</option>
+	<option value="SWE">SWE</option>
+	<option value="SYR">SYR</option>
+	<option value="TCH">TCH</option>
+	<option value="THA">THA</option>
+	<option value="TPE">TPE</option>
+	<option value="TTO">TTO</option>
+	<option value="TUN">TUN</option>
+	<option value="TUR">TUR</option>
+	<option value="UAE">UAE</option>
+	<option value="UAR">UAR</option>
+	<option value="URS">URS</option>
+	<option value="URU">URU</option>
+	<option value="USA">USA</option>
+	<option value="VAN">VAN</option>
+	<option value="VEN">VEN</option>
+	<option value="VIE">VIE</option>
+	<option value="WAL">WAL</option>
+	<option value="YEM">YEM</option>
+	<option value="YUG">YUG</option>
+	<option value="ZAI">ZAI</option>
+	<option value="ZIM">ZIM</option>
+</select>
+
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][condition][2]" value="=" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][join][2]" value="AND" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][key][2]" value="`fab_tournaments`.`organizer`" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][search_type][2]" value="normal" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][match][2]" value="1" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][full_words_only][2]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][eval][2]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][2]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][hidden][2]" value="0" />
+<input type="hidden" class="inputbox fabrik_filter input-mini " name="fabrik___filter[list_1_com_fabrik_1][elementid][2]" value="10" /></td>
+								</tr>
+												<tr>
+					<td colspan="2">
+						<input type="button" class="pull-right  btn-info btn fabrik_filter_submit button"
+								value="Go" name="filter">
+					</td>
+				</tr>
+							</table>
+											</div>
+		</div>
+</div>
+<div class="fabrikDataContainer">
+
+	<table class="table table-striped table-condensed table-hover" id="list_1_com_fabrik_1" >
+		 <thead>	<tr class="fabrik___heading">
+					<th class="heading fabrik_ordercell fab_tournaments___tournament_id 3_order fabrik_list_1_group_1 " >
+				<span>Tournament ID</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___code 4_order fabrik_list_1_group_1 " >
+				<span>Year</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___tournament 5_order fabrik_list_1_group_1 " >
+				<span>Tournament</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___type 83_order fabrik_list_1_group_1 " >
+				<span>Type</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___kind 9_order fabrik_list_1_group_1 " >
+				<span>Kind</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___organizer 10_order fabrik_list_1_group_1 " >
+				<span>Organizer</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___matches 566_order fabrik_list_1_group_1 " >
+				<span>Matches</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___from 1511_order fabrik_list_1_group_1 " >
+				<span>From</span>
+			</th>
+					<th class="heading fabrik_ordercell fab_tournaments___to 1514_order fabrik_list_1_group_1 " >
+				<span>To</span>
+			</th>
+					<th class="heading fabrik_ordercell fabrik_select" style="display:none;">
+				<span><input type="checkbox" name="checkAll" class="list_1_checkAll" id="list_1_checkAll" /></span>
+			</th>
+			</tr>
+
+</thead>
+		 <tfoot>
+			<tr class="fabrik___heading">
+				<td colspan="10">
+					<div class="fabrikNav"><div class="list-footer">
+	<div class="limit">
+		<div class="input-prepend input-append">
+			<span class="add-on">
+				<label for="limit1">
+					<small>
+					Display #					</small>
+				</label>
+			</span>
+			<select id="limit1" name="limit1" class="inputbox input-mini" size="1" onchange="">
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="50">50</option>
+	<option value="100" selected="selected">100</option>
+</select>
+			<span class="add-on">
+				<small>
+					 Total: 0				</small>
+			</span>
+		</div>
+	</div>
+		<input type="hidden" name="limitstart1" id="limitstart1" value="0" />
+</div>
+</div>				</td>
+			</tr>
+		 </tfoot>
+					<tbody class="fabrik_groupdata">
+				<tr class="groupDataMsg" style="">
+					<td class="emptyDataMessage" style="" colspan="10">
+						<div class="emptyDataMessage" style="">
+							Please select at least one filter						</div>
+					</td>
+				</tr>
+					 	</tbody>
+						</table>
+	<input type="hidden" name="option" value="com_fabrik" />
+<input type="hidden" name="orderdir" value="" />
+<input type="hidden" name="orderby" value="" />
+<input type="hidden" name="view" value="list" />
+<input type="hidden" name="listid" value="1"/>
+<input type="hidden" name="listref" value="1_com_fabrik_1"/>
+<input type="hidden" name="Itemid" value="111"/>
+<input type="hidden" name="fabrik_referrer" value="/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111&amp;limit1=100" />
+<input type="hidden" name="936e5c564d19a42d736f0255c66a7a52" value="1" />
+<input type="hidden" name="format" value="html" />
+<input type="hidden" name="packageId" value="0" />
+<input type="hidden" name="task" value="" />
+<input type="hidden" name="fabrik_listplugin_name" value="" />
+<input type="hidden" name="fabrik_listplugin_renderOrder" value="" />
+<input type="hidden" name="fabrik_listplugin_options" value="" />
+<input type="hidden" name="incfilters" value="1" /></div>
+</form>
+													</div>
+																								</div>
+																					</div>
+									</div>
+															</div>
+									</div>
+		</div>
+			</div>
+			<div id="jsn-footer">
+			<div id="jsn-footermodules" class="jsn-modulescontainer jsn-modulescontainer1 row-fluid">
+									<div id="jsn-pos-footer" class="span12">
+						<div class=" jsn-modulecontainer"><div class="jsn-modulecontainer_inner"><div class="jsn-modulecontent">
+<div class="jsn-mod-custom">
+	<p>Developed by <a style="color: #004d40;" href="mailto:dmessinis@ittf.com">Dimosthenis E. Messinis <br /></a>Results raw data provided by <a style="color: #004d40;" href="mailto:zbencsik@ittf.com" rel="alternate">Zoltan Bencsik</a>, WR raw data provided by <span style="color: #004d40;">Matt Solt</span><br />Best viewed with the latest versions of the modern browsers (Firefox, Chrome, Safari, Opera)</p></div><div class="clearbreak"></div></div></div></div>
+					</div>
+									<div class="clearbreak"></div>
+			</div>
+		</div>
+		</div>
+	<a id="jsn-gotoplink" href="http://results.ittf.link/index.php#top">
+		<span>Go to top</span>
+	</a>
+	
+<script>
+            setTimeout(function(){
+            jQuery.ajaxSetup({
+  cache: true
+});
+				 jQuery.getScript( "http://results.ittf.link/media/com_fabrik/js/lib/require/require.js", function() {
+				
+define('jquery', [], function() {
+			return jQuery;
+		});
+define('moment', [], function() {
+			return moment;
+		});
+requirejs.config(
+{"baseUrl":"http:\/\/results.ittf.link\/","paths":{"fab":"media\/com_fabrik\/js\/dist","lib":"media\/com_fabrik\/js\/lib","element":"plugins\/fabrik_element","list":"plugins\/fabrik_list","form":"plugins\/fabrik_form","cron":"plugins\/fabrik_cron","viz":"plugins\/fabrik_visualization","admin":"administrator\/components\/com_fabrik\/views","adminfields":"administrator\/components\/com_fabrik\/models\/fields","jQueryUI":"media\/com_fabrik\/js\/lib\/jquery-ui\/jquery-ui","chosen":"media\/jui\/js\/chosen.jquery.min","ajaxChosen":"media\/jui\/js\/ajax-chosen.min","punycode":"media\/system\/js\/punycode"},"shim":{"fab\/fabrik":{"deps":["fab\/utils","jquery","fab\/mootools-ext","lib\/Event.mock"]},"fab\/autocomplete-bootstrap":{"deps":["fab\/fabrik"]},"jQueryUI":{"deps":["jquery"]},"fab\/list":{"deps":[]}},"waitSeconds":30}
+);
+
+
+requirejs(['fab/chosen-loader', 'fab/fabrik', 'fab/tipsBootStrapMock'], function (Chosen, Fabrik, FloatingTips) {
+	Fabrik.liveSite = 'http://results.ittf.link/';
+	Fabrik.package = 'fabrik';
+	Fabrik.debug = false;
+	Fabrik.jLayouts = {"modal-state-label":"<span class=\"label label-inverse\">\n\t<span data-modal-state-label><\/span>:\n\t<span data-modal-state-value> <\/span>\n\t<a data-filter-clear=\"\" href=\"#\" style=\"color: white;\">\n\t\t<i data-isicon=\"true\" class=\"icon-cancel\" style=\"text-align: right; \"><\/i>\t<\/a>\n<\/span>","exportcsv":"\n<div id=\"ajax_links\" class=\"fabrikWindow-modal modal\">\n\t<div class=\"modal-header\">\n\t\t<h3 class=\"handlelabel\" data-role=\"title\">\n\t\t\tExport csv jlayout\t\t<\/h3>\n\t\t\t\t<a href=\"#\" class=\"closeFabWin\" data-role=\"close\">\n\t\t\t<span class=\"icon-cancel icon-remove-sign\"><\/span>\n\t\t<\/a>\n\t<\/div>\n\t<div class=\"contentWrapper\">\n\t\t<div class=\"itemContent\">\n\t\t\t<div class=\"itemContentPadder\">\n\t\t\t\t\t\t\t<\/div>\n\t\t<\/div>\n\t<\/div>\n\t<\/div>\n","modal-close":"<a href=\"#\" class=\"closeFabWin\" data-role=\"close\">\n\t<span class=\"icon-cancel icon-remove-sign\"><\/span>\n<\/a>","icon-expand":"<i data-isicon=\"true\" class=\"icon-expand\" ><\/i>","icon-full-screen":"<i data-isicon=\"true\" class=\"icon-out-2 icon-fullscreen\" ><\/i>"};
+
+	Fabrik.bootstrapped = true;
+	Fabrik.tips = new FloatingTips('.fabrikTip', {"tipfx":"Fx.Transitions.linear.easeIn","duration":"500","distance":50,"fadein":false});
+	Fabrik.addEvent('fabrik.list.updaterows', function () {
+		// Reattach new tips after list redraw
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.plugin.inlineedit.editing', function () {
+		Fabrik.tips.hideAll();
+	});
+	Fabrik.addEvent('fabrik.list.inlineedit.setData', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.form.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+	Fabrik.addEvent('fabrik.list.loaded', function () {
+		Fabrik.tips.attach('.fabrikTip');
+	});
+});
+
+
+requirejs(['fab/window', 'fab/list', 'fab/listfilter', 'fab/list-plugin', 'element/calc/list-calc-min'], function (Window, FbList, FbListFilter, ListPlugin, FbCalcList) {
+window.addEvent('domready', function () {
+	var list = new FbList('1',
+	{"csvChoose":false,"csvOpts":{"excel":0,"inctabledata":1,"incraw":0,"inccalcs":0,"custom_qs":"","exportLink":"\/index.php?option=com_fabrik&view=list&listid=1&Itemid=111&format=csv","incfilters":1,"popupwidth":"340","optswidth":"200"},"csvFields":{"fab_tournaments___tournament_id":1,"fab_tournaments___code":1,"fab_tournaments___tournament":1,"fab_tournaments___type":1,"fab_tournaments___kind":1,"fab_tournaments___organizer":1,"fab_tournaments___matches":1,"fab_tournaments___from":1,"fab_tournaments___to":1},"admin":false,"ajax":1,"ajax_links":false,"links":{"detail":"","edit":"","add":""},"filterMethod":"submitform","advancedFilters":[],"resetFilters":false,"form":"listform_1_com_fabrik_1","headings":"['fab_tournaments___tournament_id','fab_tournaments___code','fab_tournaments___tournament','fab_tournaments___type','fab_tournaments___kind','fab_tournaments___organizer','fab_tournaments___matches','fab_tournaments___from','fab_tournaments___to']","labels":{"fab_tournaments___tournament_id":"Tournament ID","fab_tournaments___code":"Year","fab_tournaments___tournament":"Tournament","fab_tournaments___type":"Type","fab_tournaments___kind":"Kind","fab_tournaments___organizer":"Organizer","fab_tournaments___matches":"Matches","fab_tournaments___from":"From","fab_tournaments___to":"To","fabrik_select":""},"primaryKey":"`fab_tournaments`.`id`","Itemid":"111","listRef":"1_com_fabrik_1","formid":"1","canEdit":"0","canView":"1","page":"\/index.php?option=com_fabrik&amp;view=list&amp;listid=1&amp;Itemid=111","isGrouped":false,"toggleCols":false,"j3":true,"singleOrdering":false,"formels":[{"name":"id","label":"id"}],"fabrik_show_in_list":[],"popup_width":"","popup_height":"","popup_edit_label":"Edit","popup_view_label":"View","popup_add_label":"Add","limitLength":"100","limitStart":0,"tmpl":"bootstrap","data":[[]],"groupByOpts":{"isGrouped":false,"collapseOthers":false,"startCollapsed":false,"bootstrap":true},"itemTemplate":"<tr id=\"\" class=\"fabrik_row\">\n\t\t\t<td class=\"fab_tournaments___tournament_id fabrik_element fabrik_list_1_group_1 integer\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___code fabrik_element fabrik_list_1_group_1 integer\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___tournament fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___type fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___kind fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___organizer fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___matches fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___from fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fab_tournaments___to fabrik_element fabrik_list_1_group_1\" >\n\t\t\t\t\t<\/td>\n\t\t\t<td class=\"fabrik_select fabrik_element\" style=\"display:none;\">\n\t\t\t\t\t<\/td>\n\t<\/tr>\n","winid":""}
+	);
+	Fabrik.addBlock('list_1_com_fabrik_1', list);
+	Fabrik.filter_listform_1_com_fabrik_1 = new FbListFilter({"container":"listform_1_com_fabrik_1","type":"list","id":1,"ref":"1_com_fabrik_1","advancedSearch":{"controller":"list"},"filters":[{"name":"fab_tournaments___code","id":"fab_tournaments___codevalue","filter":"<select id=\"fab_tournaments___codevalue\" name=\"fabrik___filter[list_1_com_fabrik_1][value][0]\" class=\"inputbox fabrik_filter input-mini \" size=\"1\" data-filter-name=\"fab_tournaments___code\">\n\t<option value=\"\" selected=\"selected\">All<\/option>\n\t<option value=\"1926\">1926<\/option>\n\t<option value=\"1928\">1928<\/option>\n\t<option value=\"1929\">1929<\/option>\n\t<option value=\"1930\">1930<\/option>\n\t<option value=\"1931\">1931<\/option>\n\t<option value=\"1932\">1932<\/option>\n\t<option value=\"1933\">1933<\/option>\n\t<option value=\"1934\">1934<\/option>\n\t<option value=\"1935\">1935<\/option>\n\t<option value=\"1936\">1936<\/option>\n\t<option value=\"1937\">1937<\/option>\n\t<option value=\"1938\">1938<\/option>\n\t<option value=\"1939\">1939<\/option>\n\t<option value=\"1947\">1947<\/option>\n\t<option value=\"1948\">1948<\/option>\n\t<option value=\"1949\">1949<\/option>\n\t<option value=\"1950\">1950<\/option>\n\t<option value=\"1951\">1951<\/option>\n\t<option value=\"1952\">1952<\/option>\n\t<option value=\"1953\">1953<\/option>\n\t<option value=\"1954\">1954<\/option>\n\t<option value=\"1955\">1955<\/option>\n\t<option value=\"1956\">1956<\/option>\n\t<option value=\"1957\">1957<\/option>\n\t<option value=\"1958\">1958<\/option>\n\t<option value=\"1959\">1959<\/option>\n\t<option value=\"1960\">1960<\/option>\n\t<option value=\"1961\">1961<\/option>\n\t<option value=\"1962\">1962<\/option>\n\t<option value=\"1963\">1963<\/option>\n\t<option value=\"1964\">1964<\/option>\n\t<option value=\"1965\">1965<\/option>\n\t<option value=\"1966\">1966<\/option>\n\t<option value=\"1967\">1967<\/option>\n\t<option value=\"1968\">1968<\/option>\n\t<option value=\"1969\">1969<\/option>\n\t<option value=\"1970\">1970<\/option>\n\t<option value=\"1971\">1971<\/option>\n\t<option value=\"1972\">1972<\/option>\n\t<option value=\"1973\">1973<\/option>\n\t<option value=\"1974\">1974<\/option>\n\t<option value=\"1975\">1975<\/option>\n\t<option value=\"1976\">1976<\/option>\n\t<option value=\"1977\">1977<\/option>\n\t<option value=\"1978\">1978<\/option>\n\t<option value=\"1979\">1979<\/option>\n\t<option value=\"1980\">1980<\/option>\n\t<option value=\"1981\">1981<\/option>\n\t<option value=\"1982\">1982<\/option>\n\t<option value=\"1983\">1983<\/option>\n\t<option value=\"1984\">1984<\/option>\n\t<option value=\"1985\">1985<\/option>\n\t<option value=\"1986\">1986<\/option>\n\t<option value=\"1987\">1987<\/option>\n\t<option value=\"1988\">1988<\/option>\n\t<option value=\"1989\">1989<\/option>\n\t<option value=\"1990\">1990<\/option>\n\t<option value=\"1991\">1991<\/option>\n\t<option value=\"1992\">1992<\/option>\n\t<option value=\"1993\">1993<\/option>\n\t<option value=\"1994\">1994<\/option>\n\t<option value=\"1995\">1995<\/option>\n\t<option value=\"1996\">1996<\/option>\n\t<option value=\"1997\">1997<\/option>\n\t<option value=\"1998\">1998<\/option>\n\t<option value=\"1999\">1999<\/option>\n\t<option value=\"2000\">2000<\/option>\n\t<option value=\"2001\">2001<\/option>\n\t<option value=\"2002\">2002<\/option>\n\t<option value=\"2003\">2003<\/option>\n\t<option value=\"2004\">2004<\/option>\n\t<option value=\"2005\">2005<\/option>\n\t<option value=\"2006\">2006<\/option>\n\t<option value=\"2007\">2007<\/option>\n\t<option value=\"2008\">2008<\/option>\n\t<option value=\"2009\">2009<\/option>\n\t<option value=\"2010\">2010<\/option>\n\t<option value=\"2011\">2011<\/option>\n\t<option value=\"2012\">2012<\/option>\n\t<option value=\"2013\">2013<\/option>\n\t<option value=\"2014\">2014<\/option>\n\t<option value=\"2015\">2015<\/option>\n\t<option value=\"2016\">2016<\/option>\n\t<option value=\"2017\">2017<\/option>\n\t<option value=\"2018\">2018<\/option>\n\t<option value=\"2019\">2019<\/option>\n\t<option value=\"2020\">2020<\/option>\n<\/select>\n\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][condition][0]\" value=\"=\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][join][0]\" value=\"AND\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][key][0]\" value=\"`fab_tournaments`.`code`\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][search_type][0]\" value=\"normal\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][match][0]\" value=\"1\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][full_words_only][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][eval][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][hidden][0]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][elementid][0]\" value=\"4\" \/>","required":"0","label":"Year","displayValue":[]},{"name":"fab_tournaments___type","id":"fab_tournaments___typevalue","filter":"<select id=\"fab_tournaments___typevalue\" name=\"fabrik___filter[list_1_com_fabrik_1][value][1]\" class=\"inputbox fabrik_filter input-medium \" size=\"1\" data-filter-name=\"fab_tournaments___type\">\n\t<option value=\"\" selected=\"selected\">All<\/option>\n\t<option value=\"13\">Challenge<\/option>\n\t<option value=\"3\">Continental<\/option>\n\t<option value=\"11\">Multi sport events<\/option>\n\t<option value=\"5\">Olympic Games<\/option>\n\t<option value=\"9\">Other events<\/option>\n\t<option value=\"10\">WJTTC<\/option>\n\t<option value=\"12\">World Cup<\/option>\n\t<option value=\"2\">World Junior Circuit<\/option>\n\t<option value=\"1\">World Tour \/ Pro Tour<\/option>\n\t<option value=\"4\">WTTC<\/option>\n<\/select>\n\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][condition][1]\" value=\"=\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][join][1]\" value=\"AND\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][key][1]\" value=\"`fab_tournaments`.`type`\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][search_type][1]\" value=\"normal\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][match][1]\" value=\"1\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][full_words_only][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][eval][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][hidden][1]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-medium \" name=\"fabrik___filter[list_1_com_fabrik_1][elementid][1]\" value=\"83\" \/>","required":"0","label":"Type","displayValue":[]},{"name":"fab_tournaments___organizer","id":"fab_tournaments___organizervalue","filter":"<select id=\"fab_tournaments___organizervalue\" name=\"fabrik___filter[list_1_com_fabrik_1][value][2]\" class=\"inputbox fabrik_filter input-mini \" size=\"1\" data-filter-name=\"fab_tournaments___organizer\">\n\t<option value=\"\" selected=\"selected\">All<\/option>\n\t<option value=\"ALG\">ALG<\/option>\n\t<option value=\"ARG\">ARG<\/option>\n\t<option value=\"AUS\">AUS<\/option>\n\t<option value=\"AUT\">AUT<\/option>\n\t<option value=\"AZE\">AZE<\/option>\n\t<option value=\"BAN\">BAN<\/option>\n\t<option value=\"BAR\">BAR<\/option>\n\t<option value=\"BEL\">BEL<\/option>\n\t<option value=\"BEN\">BEN<\/option>\n\t<option value=\"BIH\">BIH<\/option>\n\t<option value=\"BLR\">BLR<\/option>\n\t<option value=\"BOL\">BOL<\/option>\n\t<option value=\"BOT\">BOT<\/option>\n\t<option value=\"BRA\">BRA<\/option>\n\t<option value=\"BRN\">BRN<\/option>\n\t<option value=\"BRU\">BRU<\/option>\n\t<option value=\"BUL\">BUL<\/option>\n\t<option value=\"CAM\">CAM<\/option>\n\t<option value=\"CAN\">CAN<\/option>\n\t<option value=\"CGO\">CGO<\/option>\n\t<option value=\"CHI\">CHI<\/option>\n\t<option value=\"CHN\">CHN<\/option>\n\t<option value=\"CIV\">CIV<\/option>\n\t<option value=\"CMR\">CMR<\/option>\n\t<option value=\"COK\">COK<\/option>\n\t<option value=\"COL\">COL<\/option>\n\t<option value=\"CRC\">CRC<\/option>\n\t<option value=\"CRO\">CRO<\/option>\n\t<option value=\"CUB\">CUB<\/option>\n\t<option value=\"CZE\">CZE<\/option>\n\t<option value=\"DEN\">DEN<\/option>\n\t<option value=\"DOM\">DOM<\/option>\n\t<option value=\"ECU\">ECU<\/option>\n\t<option value=\"EGY\">EGY<\/option>\n\t<option value=\"ENG\">ENG<\/option>\n\t<option value=\"ESA\">ESA<\/option>\n\t<option value=\"ESP\">ESP<\/option>\n\t<option value=\"EST\">EST<\/option>\n\t<option value=\"ETH\">ETH<\/option>\n\t<option value=\"FIJ\">FIJ<\/option>\n\t<option value=\"FIN\">FIN<\/option>\n\t<option value=\"FRA\">FRA<\/option>\n\t<option value=\"FRG\">FRG<\/option>\n\t<option value=\"GER\">GER<\/option>\n\t<option value=\"GGY\">GGY<\/option>\n\t<option value=\"GHA\">GHA<\/option>\n\t<option value=\"GRE\">GRE<\/option>\n\t<option value=\"GUA\">GUA<\/option>\n\t<option value=\"GUM\">GUM<\/option>\n\t<option value=\"GUY\">GUY<\/option>\n\t<option value=\"HKG\">HKG<\/option>\n\t<option value=\"HRV\">HRV<\/option>\n\t<option value=\"HUN\">HUN<\/option>\n\t<option value=\"IMN\">IMN<\/option>\n\t<option value=\"INA\">INA<\/option>\n\t<option value=\"IND\">IND<\/option>\n\t<option value=\"IRI\">IRI<\/option>\n\t<option value=\"IRQ\">IRQ<\/option>\n\t<option value=\"ISL\">ISL<\/option>\n\t<option value=\"ITA\">ITA<\/option>\n\t<option value=\"JOR\">JOR<\/option>\n\t<option value=\"JPN\">JPN<\/option>\n\t<option value=\"KAZ\">KAZ<\/option>\n\t<option value=\"KEN\">KEN<\/option>\n\t<option value=\"KIR\">KIR<\/option>\n\t<option value=\"KOR\">KOR<\/option>\n\t<option value=\"KSA\">KSA<\/option>\n\t<option value=\"KUW\">KUW<\/option>\n\t<option value=\"LAT\">LAT<\/option>\n\t<option value=\"LBA\">LBA<\/option>\n\t<option value=\"LCA\">LCA<\/option>\n\t<option value=\"LIB\">LIB<\/option>\n\t<option value=\"LIE\">LIE<\/option>\n\t<option value=\"LTU\">LTU<\/option>\n\t<option value=\"LUX\">LUX<\/option>\n\t<option value=\"MAC\">MAC<\/option>\n\t<option value=\"MAR\">MAR<\/option>\n\t<option value=\"MAS\">MAS<\/option>\n\t<option value=\"MDA\">MDA<\/option>\n\t<option value=\"MEX\">MEX<\/option>\n\t<option value=\"MGL\">MGL<\/option>\n\t<option value=\"MLT\">MLT<\/option>\n\t<option value=\"MOZ\">MOZ<\/option>\n\t<option value=\"MRI\">MRI<\/option>\n\t<option value=\"MYA\">MYA<\/option>\n\t<option value=\"NCA\">NCA<\/option>\n\t<option value=\"NCL\">NCL<\/option>\n\t<option value=\"NED\">NED<\/option>\n\t<option value=\"NGR\">NGR<\/option>\n\t<option value=\"NOR\">NOR<\/option>\n\t<option value=\"NZL\">NZL<\/option>\n\t<option value=\"OMA\">OMA<\/option>\n\t<option value=\"PAK\">PAK<\/option>\n\t<option value=\"PAN\">PAN<\/option>\n\t<option value=\"PAR\">PAR<\/option>\n\t<option value=\"PER\">PER<\/option>\n\t<option value=\"PHI\">PHI<\/option>\n\t<option value=\"PLW\">PLW<\/option>\n\t<option value=\"PNG\">PNG<\/option>\n\t<option value=\"POL\">POL<\/option>\n\t<option value=\"POR\">POR<\/option>\n\t<option value=\"PRK\">PRK<\/option>\n\t<option value=\"PUR\">PUR<\/option>\n\t<option value=\"PYF\">PYF<\/option>\n\t<option value=\"QAT\">QAT<\/option>\n\t<option value=\"ROU\">ROU<\/option>\n\t<option value=\"RSA\">RSA<\/option>\n\t<option value=\"RUS\">RUS<\/option>\n\t<option value=\"SCO\">SCO<\/option>\n\t<option value=\"SEN\">SEN<\/option>\n\t<option value=\"SGP\">SGP<\/option>\n\t<option value=\"SIN\">SIN<\/option>\n\t<option value=\"SLO\">SLO<\/option>\n\t<option value=\"SMR\">SMR<\/option>\n\t<option value=\"SRB\">SRB<\/option>\n\t<option value=\"SUD\">SUD<\/option>\n\t<option value=\"SUI\">SUI<\/option>\n\t<option value=\"SVK\">SVK<\/option>\n\t<option value=\"SVN\">SVN<\/option>\n\t<option value=\"SWE\">SWE<\/option>\n\t<option value=\"SYR\">SYR<\/option>\n\t<option value=\"TCH\">TCH<\/option>\n\t<option value=\"THA\">THA<\/option>\n\t<option value=\"TPE\">TPE<\/option>\n\t<option value=\"TTO\">TTO<\/option>\n\t<option value=\"TUN\">TUN<\/option>\n\t<option value=\"TUR\">TUR<\/option>\n\t<option value=\"UAE\">UAE<\/option>\n\t<option value=\"UAR\">UAR<\/option>\n\t<option value=\"URS\">URS<\/option>\n\t<option value=\"URU\">URU<\/option>\n\t<option value=\"USA\">USA<\/option>\n\t<option value=\"VAN\">VAN<\/option>\n\t<option value=\"VEN\">VEN<\/option>\n\t<option value=\"VIE\">VIE<\/option>\n\t<option value=\"WAL\">WAL<\/option>\n\t<option value=\"YEM\">YEM<\/option>\n\t<option value=\"YUG\">YUG<\/option>\n\t<option value=\"ZAI\">ZAI<\/option>\n\t<option value=\"ZIM\">ZIM<\/option>\n<\/select>\n\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][condition][2]\" value=\"=\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][join][2]\" value=\"AND\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][key][2]\" value=\"`fab_tournaments`.`organizer`\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][search_type][2]\" value=\"normal\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][match][2]\" value=\"1\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][full_words_only][2]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][eval][2]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][grouped_to_previous][2]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][hidden][2]\" value=\"0\" \/>\n<input type=\"hidden\" class=\"inputbox fabrik_filter input-mini \" name=\"fabrik___filter[list_1_com_fabrik_1][elementid][2]\" value=\"10\" \/>","required":"0","label":"Organizer","displayValue":[]}]});
+
+
+
+Fabrik.filter_listform_1_com_fabrik_1.update();
+new FbCalcList('fab_tournaments___matches', {"listid":"1","listRef":"list_1_com_fabrik_1","formid":"1","elid":"566","doListUpdate":false});
+
+})
+});
+
+
+
+			});
+			 }, 600);
+			</script>
+      </body>
+</html>
